@@ -1,0 +1,577 @@
+@media screen and (min-width: 350px) {
+	/* MODAL */
+	.modal__btn {
+		width: 309px;
+	}
+
+	.modal__dec {
+		width: 309px;
+	}
+}
+
+@media screen and (min-width: 590px) {
+	/* MISSIONS */
+	.mission__container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.mission__text {
+		max-width: 370px;
+	}
+
+	.mission__text:last-of-type {
+		max-width: 420px;
+	}
+
+	/* FAQ */
+	.faq__title {
+		max-width: none;
+		text-align: center;
+		margin: 0 0 48px 0;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	/* ABOUT */
+	.about__video {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	/* INFO */
+	.info__title {
+		margin: 0 0 20px auto;
+		text-align: right;
+		max-width: 680px;
+	}
+
+	.info__text {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* ABOUT */
+	.about__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.about__text {
+		max-width: 385px;
+	}
+
+	.about__text:last-of-type {
+		margin: 0;
+	}
+
+	.about__video {
+		width: 300px;
+		margin: 0;
+	}
+
+	.about__egg {
+		transform: rotate(20.63deg);
+	}
+
+	/* NUMBERS */
+	.numbers {
+		margin-top: 157px;
+	}
+
+	.numbers__title {
+		text-align: center;
+		max-width: 760px;
+		margin: 0 auto 20px auto;
+	}
+
+	.numbers__text {
+		text-align: center;
+	}
+
+	.numbers__wrapper {
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 0;
+		margin-bottom: 72px;
+	}
+
+	/* TIMER */
+	.timer__wrapper {
+		position: absolute;
+		top: -180px;
+		left: 0;
+		width: 33%;
+		z-index: -1;
+	}
+
+	/* MISSIONS */
+	.mission {
+		padding-bottom: 93px;
+	}
+
+	.mission__container {
+		position: relative;
+		z-index: 1;
+	}
+
+	.mission__img {
+		position: absolute;
+		top: -87px;
+		right: 0;
+		z-index: -1;
+		width: 372px;
+	}
+
+	/* GALLERY */
+	.gallery__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.gallery__img--hidden {
+		display: block;
+	}
+
+	.gallery__img--hidden:last-of-type {
+		display: none;
+	}
+
+	/* FAQ */
+	.faq__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.faq__text {
+		height: 123px;
+		padding: 0 50px;
+	}
+
+	.faq__duck {
+		top: -90px;
+	}
+
+	/* GET */
+	.get__wrapper {
+		height: 587px;
+	}
+
+	.get__img {
+		height: auto;
+	}
+
+	.get__dec {
+		height: 22px;
+	}
+}
+
+@media screen and (min-width: 880px) {
+	/* TIMER */
+	.timer__wrapper {
+		top: -450px;
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/* HEADER */
+	.header {
+		border-top: none;
+	}
+
+	.header__menu {
+		display: flex;
+	}
+
+	.header__btn {
+		display: none;
+	}
+
+	/* PREVIEW */
+	.preview__title {
+		font-size: 76px;
+		line-height: 80px;
+	}
+
+	.preview__text {
+		font-size: 26px;
+		line-height: 30px;
+		max-width: 420px;
+	}
+
+	.preview__info {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	/* MAIN */
+	.main__dec2 {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/* margin-top: 50px; */
+		inset: 0;
+		transform: translateX(0%);
+	}
+
+	/* ABOUT */
+	.about__video {
+		width: 400px;
+	}
+
+	/* INFO */
+	.info__title {
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0 0 33px auto;
+		max-width: 560px;
+		font-family: "Montserrat", sans-serif;
+	}
+
+	/* TIMER */
+	.timer {
+		margin-top: 196px;
+	}
+
+	.timer__title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.timer__time {
+		font-size: 62px;
+		line-height: 70px;
+	}
+
+	.timer__wrapper {
+		top: -550px;
+		width: 38%;
+	}
+
+	/* NUMBERS */
+	.numbers__title {
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0 auto 16px auto;
+	}
+
+	.numbers__text {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	/* MISSIONS */
+	.mission__title {
+		font-size: 32px;
+		line-height: 37px;
+		margin: 0 0 12px 0;
+	}
+
+	.mission__text {
+		font-size: 24px;
+		line-height: 38px;
+		margin: 0 0 36px 0;
+		max-width: 540px;
+	}
+
+	.mission__text:last-of-type {
+		max-width: 610px;
+	}
+
+	.mission__img {
+		top: -99px;
+		width: 463px;
+	}
+
+	/* GALLERY */
+	.gallery__title {
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	.gallery__text {
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0 0 72px 0;
+	}
+
+	.gallery__grid {
+		grid-template-columns: repeat(5, 1fr);
+		margin-bottom: 64px;
+	}
+
+	.gallery__img--hidden:last-of-type {
+		display: block;
+	}
+
+	/* FAQ */
+	.faq__container {
+		gap: 30px;
+	}
+
+	.faq__title {
+		font-size: 32px;
+		line-height: 37px;
+		margin: 0 0 48px 0;
+	}
+
+	.faq__text {
+		padding: 0 120px;
+	}
+
+	.faq__duck {
+		top: -120px;
+	}
+
+	/* ROADMAP */
+	.roadmap {
+		padding-bottom: 270px;
+	}
+
+	.roadmap__container {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.roadmap__block::before {
+		filter: blur(145px);
+	}
+
+	.roadmap__img--second {
+		padding-top: 20px;
+	}
+
+	.roadmap__decs {
+		transform: rotate(0);
+		margin: 0;
+		gap: 25px;
+	}
+
+	.roadmap__dec--first {
+		transform: rotate(0);
+	}
+
+	.roadmap__dec--first {
+		margin: 0;
+	}
+
+	/* GET */
+	.get__title {
+		font-size: 32px;
+		line-height: 38px;
+		margin: 0 0 46px 0;
+	}
+
+	/* TEAM */
+	.team__title {
+		margin: 0 0 64px 0;
+	}
+
+	.team__grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.team__avatar {
+		width: 162px;
+		height: 162px;
+	}
+
+	.team__name {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.team__pos {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	/* FOOTER */
+	.footer__dec--desc {
+		display: flex;
+	}
+
+	.footer__dec--mobile {
+		display: none;
+	}
+
+	/* MODAL */
+	.modal__dec {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	/* ABOUT */
+	.about__video {
+		width: 530px;
+	}
+
+	/* TIMER */
+	.timer__wrapper {
+		top: -650px;
+	}
+
+	/* FAQ */
+	.faq__duck {
+		width: 25%;
+		top: -300px;
+	}
+
+	.faq__gun {
+		display: block;
+		width: 20%;
+		top: -130px;
+	}
+
+	/* MODAL */
+	.modal__dec {
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	/* BUTTONS */
+	.btn {
+		height: 58px;
+		font-size: 20px;
+	}
+
+	/* PREVIEW */
+	.preview__title {
+		font-size: 96px;
+		line-height: 102px;
+	}
+
+	.preview__text {
+		font-size: 36px;
+		line-height: 44px;
+		max-width: 560px;
+	}
+
+	.preview__info {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	/* ABOUT */
+	.about__container {
+		gap: 20px;
+	}
+
+	.about__title {
+		font-size: 64px;
+		line-height: 75px;
+		margin: 0;
+	}
+
+	.about__subtitle {
+		font-size: 32px;
+		line-height: 38px;
+		margin: 0 0 32px 0;
+	}
+
+	.about__text {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 16px;
+		max-width: 780px;
+	}
+
+	.about__video {
+		width: 750px;
+		right: -150px;
+	}
+
+	/* INFO */
+	.info__text {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	/* TIMER */
+	.timer__time {
+		font-size: 96px;
+		line-height: 112px;
+	}
+
+	.timer__wrapper {
+		width: 35%;
+	}
+
+	/* MISSION */
+	.mission {
+		margin-top: 213px;
+	}
+
+	/* Gallery */
+	.gallery {
+		margin-top: 224px;
+		margin-bottom: 200px;
+	}
+
+	/* ROADMAP */
+	.roadmap {
+		margin-top: 300px;
+		padding-bottom: 470px;
+	}
+
+	.roadmap__container {
+		justify-content: space-between;
+	}
+
+	.roadmap__img {
+		width: auto;
+		height: auto;
+	}
+
+	.roadmap__img--second {
+		padding-top: 40px;
+	}
+
+	.roadmap__img--third {
+		margin-right: -60px;
+	}
+
+	.roadmap__name {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	/* TEAM */
+	.team {
+		margin-top: 170px;
+	}
+
+	/* FOOTER */
+	.footer {
+		margin-top: 164px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	/* ABOUT */
+	.about__video {
+		right: -230px;
+	}
+
+	/* TIMER */
+	.timer__wrapper {
+		top: -700px;
+	}
+
+	/* FAQ */
+	.faq__duck {
+		width: 28%;
+		top: -330px;
+	}
+
+	.faq__gun {
+		display: block;
+		width: 30%;
+		top: -300px;
+	}
+}

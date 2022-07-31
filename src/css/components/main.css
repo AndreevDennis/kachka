@@ -1,0 +1,32 @@
+.main__container {
+	position: relative;
+	z-index: 1;
+}
+
+.main__container--light::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	background-image: linear-gradient(180deg, #101029 17.19%, rgba(22, 18, 53, 0) 55.73%, #161b41 85.21%);
+}
+
+.main__dec1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: auto;
+	z-index: -1;
+}
+
+.main__dec2 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: auto;
+	z-index: -1;
+	transform: translateX(-50%);
+}

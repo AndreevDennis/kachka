@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--main-bg: #101029;
+	--footer-bg: #09010d;
+	--mobile-nav-bg: #161349;
+
+	--text-color: #ffffff;
+	--accent-color: #c409d1;
+	--opensea-color: #2081e2;
+
+	--btn-gradient: linear-gradient(90deg, #5d00fa 0%, #d70bca 100%);
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 40px;
+	overflow-x: hidden;
+}
+
+.flex-1 {
+	flex: 1;
+}

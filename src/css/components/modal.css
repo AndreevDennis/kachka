@@ -1,0 +1,91 @@
+.modal {
+	display: flex;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 999999999;
+	inset: 0;
+	opacity: 0;
+	background-image: linear-gradient(180deg, rgba(7, 7, 24, 0.98) 44.27%, rgba(7, 7, 24, 0.9) 100%);
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.modal--visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.modal__close {
+	align-self: flex-end;
+	background-color: transparent;
+	border-style: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.modal__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	font-stretch: 151%;
+	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
+		"YTDE" -203, "YTFI" 738, "opsz" 29;
+	margin: 0 0 16px 0;
+}
+
+.modal__text {
+	font-weight: 500;
+	line-height: 22px;
+	margin: 0;
+	text-align: center;
+}
+
+.modal__text:last-of-type {
+	margin-bottom: 20px;
+}
+
+.modal__accesn {
+	color: #df1931;
+}
+
+.modal__dec {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.modal__dec::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: #c409d1;
+	filter: blur(300px);
+	z-index: -1;
+}
+
+.modal__img {
+	width: 100%;
+	height: auto;
+}
+
+.modal__btn {
+	width: 100%;
+}

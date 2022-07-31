@@ -1,0 +1,99 @@
+.footer {
+	margin-top: 100px;
+	background-color: var(--footer-bg);
+	padding: 65px 0;
+}
+
+.footer__grid {
+	display: flex;
+	justify-content: space-around;
+	gap: 21px;
+}
+
+.footer__title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	margin: 0 0 8px 0;
+}
+
+.footer__email {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0 0 27px 0;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.footer__socials {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 68px;
+}
+
+.footer__social {
+	text-decoration: none;
+}
+
+.footer__dec {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 27px;
+}
+
+.footer__dec--desc {
+	display: none;
+	margin-top: 60px;
+}
+
+.footer__dec-text {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #7001f2;
+	margin: 12px 0 0 0;
+}
+
+.footer__logo {
+	display: block;
+}
+
+.footer__copyright {
+	font-size: 14px;
+	line-height: 17px;
+	margin: 8px 0 0 0;
+}
+
+.footer__menu {
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+.footer__elem {
+	font-size: 14px;
+	line-height: 17px;
+	padding-left: 8px;
+	margin: 0 0 8px 0;
+}
+
+.footer__elem:last-of-type {
+	margin: 0;
+}
+
+.footer__link {
+	color: var(--text-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+	color: var(--accent-color);
+}
+
+.footer__elem::marker {
+	content: url("../../img/bullet.svg");
+}

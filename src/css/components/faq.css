@@ -1,0 +1,109 @@
+.faq {
+	position: relative;
+	z-index: 1;
+}
+
+.faq__duck {
+	position: absolute;
+	width: 156px;
+	top: -75px;
+	right: 0px;
+	z-index: -1;
+}
+
+.faq__duck::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: #291025;
+	filter: blur(500px);
+	z-index: -1;
+}
+
+.faq__gun {
+	display: none;
+	position: absolute;
+	left: 0px;
+	z-index: -1;
+}
+
+.faq__gun::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: #1f1f4d;
+	filter: blur(500px);
+	z-index: -1;
+}
+
+.faq__img {
+	width: 100%;
+}
+
+.faq__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 1000;
+	font-size: 40px;
+	font-stretch: 151%;
+	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
+		"YTDE" -203, "YTFI" 738, "opsz" 29;
+	line-height: 47px;
+	margin: 0 0 20px 0;
+	color: var(--accent-color);
+	max-width: 190px;
+}
+
+.faq__container {
+	display: grid;
+	gap: 16px;
+}
+
+.faq__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 128px;
+	margin: 0;
+	padding: 0 40px;
+	line-height: 20px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.faq__text::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 60px;
+	border: 3px solid transparent;
+	-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	z-index: -1;
+}
+
+.faq__text:nth-child(1)::before {
+	background: linear-gradient(90deg, #4841bf, #c409d1) border-box;
+}
+.faq__text:nth-child(2)::before {
+	background: linear-gradient(90deg, #4e75ff, #bd00ff) border-box;
+}
+.faq__text:nth-child(3)::before {
+	background: linear-gradient(90deg, #00dccf, #9363e3) border-box;
+}
+.faq__text:nth-child(4)::before {
+	background: linear-gradient(90deg, #8a3161, #bd00ff) border-box;
+}
+.faq__text:nth-child(5)::before {
+	background: linear-gradient(90deg, #3b1349, #6396e3) border-box;
+}
+.faq__text:nth-child(6)::before {
+	background: linear-gradient(90deg, #43318a, #0038ff) border-box;
+}

@@ -1,0 +1,36 @@
+.mission {
+	margin-top: 167px;
+	padding-top: 46px;
+	background-image: linear-gradient(90deg, #101029 0%, #161c43 100%);
+}
+
+.mission__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.mission__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 1000;
+	font-size: 40px;
+	font-stretch: 151;
+	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
+		"YTDE" -203, "YTFI" 738, "opsz" 29;
+	line-height: 47px;
+	margin: 0 0 20px 0;
+	color: var(--accent-color);
+}
+
+.mission__text {
+	line-height: 20px;
+	margin: 0 0 18px 0;
+}
+
+.mission__text:last-of-type {
+	margin: 0;
+}
+
+.mission__img {
+	width: 275px;
+	align-self: flex-end;
+}

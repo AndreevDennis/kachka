@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>KACHKA</title>
+		<meta name="description" content="Gulp-assembly v.1" />
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="icon" href="./img/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon-180x180.png" />
+
+		<meta name="theme-color" content="#000000" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900;8..144,1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+
+	<body>
+		<svg style="display: none">
+			<symbol id="burger" viewBox="0 0 21 13">
+				<rect width="21" height="3" fill="#FAFAFB" />
+				<rect y="10" width="21" height="3" fill="#FAFAFB" />
+				<rect y="5" width="21" height="3" fill="#FAFAFB" />
+			</symbol>
+			<symbol id="close" viewBox="0 0 18 18">
+				<rect x="3" width="21" height="3" transform="rotate(45 3 0)" fill="#FAFAFB" />
+				<rect x="1" y="15" width="21" height="3" transform="rotate(-45 1 15)" fill="#FAFAFB" />
+			</symbol>
+			<symbol id="play-btn">
+				<path
+					d="M32.5 5.417c14.934 0 27.083 12.15 27.083 27.083 0 14.934-12.15 27.083-27.083 27.083-14.934 0-27.083-12.15-27.083-27.083 0-14.934 12.15-27.083 27.083-27.083zM32.5 0C14.552 0 0 14.552 0 32.5S14.552 65 32.5 65 65 50.448 65 32.5 50.448 0 32.5 0zm-8.125 46.042V18.958L48.75 32.895 24.375 46.042z"
+					fill="#fff"
+				/>
+			</symbol>
+			<symbol id="opensea">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M11.773.716c-.463.248-.536.431-.536 1.35v.811l-.29-.048a9.593 9.593 0 01-.873-.222c-.32-.095-.705-.199-.856-.23-.15-.031-.36-.09-.466-.131-.254-.099-.39-.094-.39.012 0 .048.183.461.407.92.514 1.054.689 1.456.689 1.587 0 .057.027.12.061.142.07.044.552 1.496.749 2.259.415 1.613.44 3.006.073 4.106-.29.868-.945 2.126-1.736 3.333-.14.215-.235.424-.21.465.029.048.494.074 1.328.074.923 0 1.316.024 1.4.087.104.077.116.206.1 1.058l-.02.97-1.605.02c-1.605.018-1.605.018-1.967-.162-.338-.168-.667-.505-.902-.928-.051-.092-.113-.389-.136-.659l-.044-.49-2.857-.018-2.857-.019v.539c.001.638.234 1.644.537 2.323.744 1.665 2.378 3.085 4.048 3.518.734.19 1.676.217 6.8.198l5.28-.02.444-.223c.87-.434 1.696-1.343 2.578-2.834.557-.942 1.112-1.74 1.37-1.97.359-.32 1.137-.815 1.622-1.033l.32-.144-.019-.713-.02-.714-.273.02c-.15.011-.397.062-.548.113-.31.104-.67.212-1.847.556-.452.132-1.356.398-2.008.592l-1.187.352-.639.633c-.351.348-.786.73-.965.848l-.327.215-1.357.023-1.357.023.019-1.064.019-1.063.869-.034.869-.035.344-.335c1.168-1.135 2.102-2.46 2.479-3.515.221-.62.222-1.635.002-2.288-.512-1.515-1.67-3.063-3.483-4.654-.385-.338-.79-.66-.9-.719l-.2-.105-.026-1.094c-.029-1.23-.069-1.35-.547-1.657-.312-.2-.62-.208-.959-.026zM7.111 4.795a6.75 6.75 0 00-.39.602c-.158.267-.388.642-.51.832a141.041 141.041 0 00-1.44 2.265c-.508.826-.763 1.232-1.37 2.175-1.293 2.016-1.325 2.081-1.044 2.152.085.022 1.254.03 2.598.019 2.353-.02 2.448-.025 2.545-.159.197-.27.923-1.809 1.029-2.18.299-1.047.042-2.657-.77-4.827-.367-.978-.456-1.1-.648-.88z"
+					fill="#fff"
+				/>
+			</symbol>
+			<symbol id="twitter">
+				<path
+					d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+					fill="#fff"
+				/>
+			</symbol>
+			<symbol id="discord">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M18.54 0A2.466 2.466 0 0121 2.472V24l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22H2.46A2.466 2.466 0 010 18.696V2.472A2.466 2.466 0 012.46 0h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524A9.782 9.782 0 009.264 6.18l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012a7.898 7.898 0 001.74-.516c.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z"
+					fill="#fff"
+				/>
+			</symbol>
+			<symbol id="telegram">
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M18.384 19.779a1.19 1.19 0 001.107.145 1.16 1.16 0 00.724-.84C21.085 15 23.192 4.663 23.983.948a.78.78 0 00-.26-.758.8.8 0 00-.797-.14C18.733 1.602 5.82 6.447.542 8.4A.827.827 0 000 9.199c.012.354.25.66.593.764 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.21 6.615c.094.28.313.5.602.576a.866.866 0 00.811-.207l3.096-2.923s3.572 2.619 5.598 4.062zm-11.01-8.677l1.68 5.538.372-3.507 10.185-9.186a.277.277 0 00.033-.377.284.284 0 00-.376-.064L7.374 11.102z"
+					fill="#fff"
+				/>
+			</symbol>
+			<symbol id="arrow1" viewBox="0 0 111 76">
+				<path
+					d="M82.86 1.146c9.04 6.76 16.6 15.96 22.141 25.656 3.027 5.325 7.652 12.773 5.34 18.203-3.228 7.481-3.613-1.445-41.715 6.636-3.448.723-4.103-5.6-1.214-6.623a191.026 191.026 0 0118.496-5.609c-25.611-8.595-51.065-.168-68.673 18.438C14.984 60.215 7.31 69.77 5.567 73.253c-2.127 4.21-7.019.42-3.61-5.561 5.077-17.186 35.17-54.048 78.169-45.018 10.16 2.136 10.757 4.265 8.294 1.401-2.596-3.04-7.61-8.148-10.627-10.893-5.637-5.141-.48-16.164 5.066-12.036z"
+					fill="#C94B4B"
+				/>
+			</symbol>
+			<symbol id="arrow2" viewBox="0 0 109 54">
+				<path
+					d="M108.703 30.103C96.597 8.431 88.11 4.131 84.935.593c-1.65-1.843-6.222.995-4.423 3.199 3.344 4.067-.784-.382 9.058 15.253.805 1.292.847 1.08-.17.635C40.108-2.648 7.197 24.256.085 51.415c-.867 3.305 5.165 3.686 6.752-.318 7.027-17.689 25.97-31.268 45.484-29.7 10.625.55 21.038 4.448 30.435 8.007-5.482.127-10.984.212-16.487.381-5.419.191-7.81 6.737-3.112 7.415 13.017 1.864 26.393.953 39.41-.53 5.1-.572 7.259-4.554 6.137-6.567z"
+					fill="#C94B4B"
+				/>
+			</symbol>
+			<symbol id="arrow3" viewBox="0 0 119 55">
+				<path
+					d="M3.598.153c3.576-.676 4.74.458 22.36 11.607.82.523 6.873 4.363 11.31 7.57 3.124 2.269 5.515 6.283 1.595 6.458-6.226.152-18.656-7.68-18.096-6.85C49.462 60.563 97.781 49 113.53 14.704c1.055-2.29 5.859-.371 5.45 1.963-7.282 40.252-69.453 56.2-102.865 11.083 1.486 9.6 1.68 9.818.41 14.181-.647 2.225-6.011 2.814-8.962-1.418-2.22-3.185-3.49-4.865-5.558-18.195A192.585 192.585 0 010 3.709C-.107 1.724 1.982.46 3.598.153z"
+					fill="#C94B4B"
+				/>
+			</symbol>
+		</svg>
+
+		<div aria-hidden="true" class="modal">
+			<div class="container flex-1" role="dialog" aria-modal="true" aria-label="Modal window">
+				<div class="modal__container">
+					<div class="modal__wrapper">
+						<button type="button" hidden class="modal__close" aria-label="Close modal">
+							<img aria-hidden="true" src="./img/modal/modal-close.png" alt="" />
+						</button>
+						<h2 class="modal__title">Congratulations!</h2>
+						<p class="modal__text">This Kach<span class="modal__accesn">KA</span> chose you!</p>
+						<div class="modal__dec">
+							<img
+								src="./img/modal/congrat.png"
+								width="535"
+								height="519"
+								alt="War duck in ammunition and weapon"
+								class="modal__img"
+							/>
+						</div>
+						<p class="modal__text">Go and get it to protect your NFT account</p>
+						<button hidden class="btn modal__btn">See Whole Collection</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="mobile-nav" aria-hidden="true" aria-modal="true" aria-label="Mobile navigation" tabindex="-1">
+			<header class="header">
+				<div class="container">
+					<div class="header__container">
+						<div class="header__info">
+							<img src="./img/logo.svg" alt="KACHKA" width="160" height="65" />
+							<button hidden id="closeHeader" class="header__btn" aria-expanded="false" aria-label="Close navigation">
+								<svg focusable="false" aria-hidden="true" width="18" height="18">
+									<use xlink:href="#close" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<ul id="menu" class="mobile-nav__menu">
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#aboutSectionTitle">Concept</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#missionSectionTitle">Mission</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#gallerySectionTitle">Gallery</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#faqSectionTitle">Benefits</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#roadmapSectionTitle">Roadmap</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#getSectionTitle">Selection</a></li>
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#teamSectionTitle">Team</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="preview">
+			<div class="preview__video">
+				<iframe
+					class="preview__iframe"
+					width="100%"
+					height="100%"
+					src="https://www.youtube.com/embed/pihgTuI2sF4?controls=0&autoplay=1&mute=1&loop=1&playlist=pihgTuI2sF4&modestbranding=1&showinfo=0&disablekb=1&iv_load_policy=3&rel=0&fs=0"
+					frameborder="0"
+					allowfullscreen
+				></iframe>
+			</div>
+			<div class="preview__bg"></div>
+			<header class="header">
+				<div class="container">
+					<div class="header__container">
+						<div class="header__info">
+							<img src="./img/logo.svg" alt="KACHKA" width="160" height="65" />
+							<nav class="header__nav">
+								<ul class="header__menu">
+									<li class="header__elem"><a class="header__link" href="#aboutSectionTitle">Concept</a></li>
+									<li class="header__elem"><a class="header__link" href="#missionSectionTitle">Mission</a></li>
+									<li class="header__elem"><a class="header__link" href="#gallerySectionTitle">Gallery</a></li>
+									<li class="header__elem"><a class="header__link" href="#faqSectionTitle">Benefits</a></li>
+									<li class="header__elem"><a class="header__link" href="#roadmapSectionTitle">Roadmap</a></li>
+									<li class="header__elem"><a class="header__link" href="#getSectionTitle">Selection</a></li>
+									<li class="header__elem"><a class="header__link" href="#teamSectionTitle">Team</a></li>
+								</ul>
+							</nav>
+							<button id="openHeader" class="header__btn" aria-label="Open navigation">
+								<svg focusable="false" aria-hidden="true" width="21" height="13">
+									<use xlink:href="#burger" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="container flex-1">
+				<div class="preview__container">
+					<div class="preview__wrapper">
+						<h1 class="preview__title">
+							Battle ducks — <br />
+							your NFT protection
+						</h1>
+						<p class="preview__text">100% Created and approved by Ukrainian national "biolabs"</p>
+					</div>
+					<button class="preview__play" aria-label="Open video">
+						<svg focusable="false" aria-hidden="true" width="65" height="65">
+							<use xlink:href="#play-btn" />
+						</svg>
+					</button>
+					<div class="preview__wrapper">
+						<p class="preview__info">
+							Be invincible like Ukrainians. <br />
+							Buy a unique NFT-duck from the biolab and support the Ukrainian army.
+						</p>
+						<a href="#" class="btn btn--opensea" target="_blank" rel="noreferrer noopener">
+							<svg focusable="false" aria-hidden="true" width="24" height="22">
+								<use xlink:href="#opensea" />
+							</svg>
+							Link to Opensea
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="main">
+			<div class="main__container">
+				<img aria-hidden="true" src="./img/dec/dec1.png" alt="" class="main__dec1" />
+				<section aria-labelledby="aboutSectionTitle" class="about">
+					<div class="container">
+						<div class="about__container">
+							<div class="about__info">
+								<h2 id="aboutSectionTitle" class="about__title">Battle ducks</h2>
+								<h3 class="about__subtitle">Ukrainian NFT Biological weapons</h3>
+								<p class="about__text">
+									The Kach.NFT team of like-minded people has developed a patriotic collection of "biological weapons"
+									that protects Ukrainian borders.
+								</p>
+								<p class="about__text">
+									<strong>«Battle ducks»</strong>is an irony over Russian propaganda, Ukrainian biological weapons for
+									eliminating the enemies of Ukraine.
+								</p>
+							</div>
+							<div class="about__video">
+								<video
+									class="about__egg"
+									poster="./img/egg.png"
+									src="./img/egg.webm"
+									type="video/webm"
+									autoplay
+									loop
+									aria-label="Spinning egg with ammo belt"
+								></video>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section aria-labelledby="infoSectionTitle" class="info">
+					<div class="container">
+						<h2 id="infoSectionTitle" class="info__title">This is 1100 NFT-ducks with unique weapons and plumage.</h2>
+						<p class="info__text">
+							We want to fulfill every duck’s destiny - <b>destroy our enemies.</b> <br />
+							The battle duck is one of the symbols Ukrainian people’s strength and will.
+						</p>
+					</div>
+				</section>
+				<section aria-labelledby="timerSectionTitle" class="timer">
+					<div class="container">
+						<h2 id="timerSectionTitle" class="timer__title">Hunting season ends in</h2>
+						<time class="timer__time" datetime="324:25:46">324 : 25 : 46</time>
+					</div>
+					<div class="timer__wrapper">
+						<img aria-hidden="true" src="./img/duck-left.png" alt="" class="timer__img" />
+					</div>
+				</section>
+				<section aria-labelledby="numbersSectionTitle" class="numbers">
+					<div class="container">
+						<h2 id="numbersSectionTitle" class="numbers__title">
+							Do you want to help people of Ukraine defeat the horde?
+						</h2>
+						<p class="numbers__text">Help Ukrainian army - buy ducks.</p>
+						<div class="numbers__container">
+							<div class="numbers__wrapper">
+								<div class="numbers__block">
+									<p class="numbers__number">1100</p>
+									<p class="numbers__desc">NFT - DUCKS</p>
+								</div>
+								<div class="numbers__block">
+									<p class="numbers__number">10</p>
+									<p class="numbers__desc">Types of BIO WEAPON</p>
+								</div>
+								<div class="numbers__block">
+									<p class="numbers__number">1</p>
+									<p class="numbers__desc">Collection</p>
+								</div>
+							</div>
+							<a href="#" class="btn btn--opensea" target="_blank" rel="noreferrer noopener">
+								<svg focusable="false" aria-hidden="true" width="24" height="22">
+									<use xlink:href="#opensea" />
+								</svg>
+								Link to Opensea
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section aria-labelledby="missionSectionTitle" class="mission">
+				<div class="container">
+					<div class="mission__container">
+						<div class="mission__info">
+							<h2 id="missionSectionTitle" class="mission__title">Mission</h2>
+							<p class="mission__text">
+								​Money received from the sale of NFTs will be directed to help the Ukrainian army and civilians in
+								harm's way.
+							</p>
+							<p class="mission__text">We also will be constantly reporting our donations.</p>
+						</div>
+						<img src="./img/duck-mid.png" alt="War duck in ammunition and weapon" class="mission__img" />
+					</div>
+				</div>
+			</section>
+			<section aria-labelledby="gallerySectionTitle" class="gallery">
+				<div class="full-container">
+					<h2 id="gallerySectionTitle" class="gallery__title">Gallery</h2>
+					<p class="gallery__text">​Expirience our collection in Gallery section</p>
+					<div class="gallery__grid">
+						<img src="./img/gallery/1.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img src="./img/gallery/2.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img src="./img/gallery/3.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img src="./img/gallery/4.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img src="./img/gallery/5.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img src="./img/gallery/6.jpg" alt="War duck in ammunition and weapon" class="gallery__img" />
+						<img
+							src="./img/gallery/7.jpg"
+							alt="War duck in ammunition and weapon"
+							class="gallery__img gallery__img--hidden"
+						/>
+						<img
+							src="./img/gallery/8.jpg"
+							alt="War duck in ammunition and weapon"
+							class="gallery__img gallery__img--hidden"
+						/>
+						<img
+							src="./img/gallery/9.jpg"
+							alt="War duck in ammunition and weapon"
+							class="gallery__img gallery__img--hidden"
+						/>
+						<img
+							src="./img/gallery/10.jpg"
+							alt="War duck in ammunition and weapon"
+							class="gallery__img gallery__img--hidden"
+						/>
+					</div>
+					<button class="btn btn--gallery">See Whole Collection</button>
+				</div>
+			</section>
+			<div class="main__container main__container--light">
+				<img aria-hidden="true" src="./img/dec/dec2.png" alt="" class="main__dec2" />
+				<section aria-labelledby="faqSectionTitle" class="faq">
+					<div class="container">
+						<h2 id="faqSectionTitle" class="faq__title">If you buy a DUCK …</h2>
+						<div class="faq__container">
+							<p class="faq__text">
+								You are becoming a member of the unique community with different giveaways and contests
+							</p>
+							<p class="faq__text">Your personal message will be written on the real missile</p>
+							<p class="faq__text">You will be added to the WhiteList for the future collections</p>
+							<p class="faq__text">You will support Ukraine</p>
+							<p class="faq__text">You will receive all the rights, which are mentioned in the token description</p>
+							<p class="faq__text">You will be the owner of the only BIO Weapon in Ukraine</p>
+						</div>
+					</div>
+					<div class="faq__duck">
+						<img src="./img/duck-right.png" alt="" class="faq__img" />
+					</div>
+					<div class="faq__gun">
+						<img src="./img/gun-left.png" alt="" class="faq__img" />
+					</div>
+				</section>
+				<section aria-labelledby="roadmapSectionTitle" class="roadmap">
+					<div class="container">
+						<h2 id="roadmapSectionTitle" class="roadmap__title">Roadmap</h2>
+						<div class="roadmap__container">
+							<div class="roadmap__block">
+								<img
+									class="roadmap__img roadmap__img--first"
+									src="./img/roadmap/hero.png"
+									alt=""
+									width="309"
+									height="304"
+								/>
+								<p class="roadmap__name">Hero-DUCK</p>
+							</div>
+							<div class="roadmap__dec roadmap__dec--first" focusable="false" aria-hidden="true">
+								<svg width="111" height="76">
+									<use xlink:href="#arrow1" />
+								</svg>
+							</div>
+							<div class="roadmap__block">
+								<img
+									class="roadmap__img roadmap__img--second"
+									src="./img/roadmap/enemy.png"
+									alt=""
+									width="255"
+									height="268"
+								/>
+								<p class="roadmap__name">Enemy - ORD</p>
+							</div>
+							<div class="roadmap__decs">
+								<div class="roadmap__dec" focusable="false" aria-hidden="true">
+									<svg width="109" height="54">
+										<use xlink:href="#arrow2" />
+									</svg>
+								</div>
+								<div class="roadmap__dec" focusable="false" aria-hidden="true">
+									<svg width="119" height="55">
+										<use xlink:href="#arrow3" />
+									</svg>
+								</div>
+							</div>
+							<div class="roadmap__block">
+								<img
+									class="roadmap__img roadmap__img--third"
+									src="./img/roadmap/battle.png"
+									alt=""
+									width="360"
+									height="335"
+								/>
+								<p class="roadmap__name">BATTLE</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="get" aria-labelledby="getSectionTitle">
+				<div class="container">
+					<h2 id="getSectionTitle" class="get__title">
+						Get your Kach<span class="get__title--red">Ka</span> and go HUNTING <br />
+						You can purchase it at the <span class="get__title--blue">OpenSea</span>
+					</h2>
+					<button class="btn" type="button" id="getDuck">Click to choose</button>
+				</div>
+				<div class="get__wrapper">
+					<img src="./img/group.png" alt="Group of war ducks in ammunition and weapon" class="get__img" />
+				</div>
+				<div class="get__dec"></div>
+			</section>
+			<section class="team" aria-labelledby="teamSectionTitle">
+				<div class="container">
+					<h2 id="teamSectionTitle" class="team__title">Team</h2>
+					<div class="team__grid">
+						<div class="team__member">
+							<img
+								src="./img/team/david.png"
+								alt="Avatar of David - duck"
+								class="team__avatar"
+								width="162"
+								height="162"
+							/>
+							<p class="team__name">David</p>
+							<div class="team__dec"></div>
+							<p class="team__pos">CEO / Product owner</p>
+						</div>
+						<div class="team__member">
+							<img
+								src="./img/team/denis.png"
+								alt="Avatar of David - duck"
+								class="team__avatar"
+								width="162"
+								height="162"
+							/>
+							<p class="team__name">Denis</p>
+							<div class="team__dec"></div>
+							<p class="team__pos">Project manager</p>
+						</div>
+						<div class="team__member">
+							<img
+								src="./img/team/daniil.png"
+								alt="Avatar of David - duck"
+								class="team__avatar"
+								width="162"
+								height="162"
+							/>
+							<p class="team__name">Daniil</p>
+							<div class="team__dec"></div>
+							<p class="team__pos">Creator</p>
+						</div>
+						<div class="team__member">
+							<img
+								src="./img/team/andrew.png"
+								alt="Avatar of David - duck"
+								class="team__avatar"
+								width="162"
+								height="162"
+							/>
+							<p class="team__name">Andrew</p>
+							<div class="team__dec"></div>
+							<p class="team__pos">Marketer</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__col">
+						<h2 class="footer__title">Connect</h2>
+						<a class="footer__email" href="mailto:support@kach.com" target="_blank">support@kach.com</a>
+						<div class="footer__socials">
+							<a class="footer__social" href="#" aria-label="Twitter" target="_blank" rel="noreferrer noopener">
+								<svg width="24" height="20" focusable="false" aria-hidden="true">
+									<use xlink:href="#twitter" />
+								</svg>
+							</a>
+							<a class="footer__social" href="#" aria-label="Discord" target="_blank" rel="noreferrer noopener">
+								<svg width="21" height="24" focusable="false" aria-hidden="true">
+									<use xlink:href="#discord" />
+								</svg>
+							</a>
+							<a class="footer__social" href="#" aria-label="Telegram" target="_blank" rel="noreferrer noopener">
+								<svg width="24" height="20" focusable="false" aria-hidden="true">
+									<use xlink:href="#telegram" />
+								</svg>
+							</a>
+						</div>
+						<div class="footer__dec footer__dec--mobile">
+							<img src="./img/dec/bio-weapon.png" alt="" width="84" height="80" />
+							<p class="footer__dec-text">Bio Weapon</p>
+						</div>
+						<img class="footer__logo" src="./img/logo.svg" alt="KACHKA" width="160" height="65" />
+						<p class="footer__copyright">©2022 KACH. All rights reserved</p>
+					</div>
+					<div class="footer__col">
+						<h2 class="footer__title">Menu</h2>
+						<nav>
+							<ul class="footer__menu">
+								<li class="footer__elem"><a class="footer__link" href="#aboutSectionTitle">Concept</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#missionSectionTitle">Mission</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#gallerySectionTitle">Gallery</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#faqSectionTitle">Benefits</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#roadmapSectionTitle">Roadmap</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#getSectionTitle">Selection</a></li>
+								<li class="footer__elem"><a class="footer__link" href="#teamSectionTitle">Team</a></li>
+							</ul>
+						</nav>
+						<div class="footer__dec footer__dec--desc">
+							<img src="./img/dec/bio-weapon.png" alt="" width="84" height="80" />
+							<p class="footer__dec-text">Bio Weapon</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

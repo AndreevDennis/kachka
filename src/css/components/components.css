@@ -1,0 +1,22 @@
+@import "./body.css";
+@import "./container.css";
+@import "./buttons.css";
+
+@import "./preview.css";
+@import "./header.css";
+@import "./mobile-nav.css";
+
+@import "./modal.css";
+
+@import "./main.css";
+@import "./about.css";
+@import "./info.css";
+@import "./timer.css";
+@import "./numbers.css";
+@import "./mission.css";
+@import "./gallery.css";
+@import "./faq.css";
+@import "./roadmap.css";
+@import "./get.css";
+@import "./team.css";
+@import "./footer.css";

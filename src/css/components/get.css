@@ -1,0 +1,42 @@
+.get {
+	background-image: linear-gradient(270.36deg, #161b41 0.32%, #161b41 100.74%);
+}
+
+.get__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 1000;
+	font-size: 18px;
+	font-stretch: 151%;
+	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
+		"YTDE" -203, "YTFI" 738, "opsz" 29;
+	margin: 0 0 34px 0;
+	text-align: center;
+}
+
+.get__title--red {
+	color: #df1931;
+}
+
+.get__title--blue {
+	color: var(--opensea-color);
+}
+
+.get__wrapper {
+	position: relative;
+}
+
+.get__wrapper {
+	height: 296px;
+}
+
+.get__img {
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	height: 296px;
+}
+
+.get__dec {
+	height: 11px;
+	background-image: linear-gradient(90deg, #f01bf3 0%, #910893 100%);
+}

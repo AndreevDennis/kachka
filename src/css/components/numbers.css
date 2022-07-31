@@ -1,0 +1,42 @@
+.numbers {
+	margin-top: -80px;
+}
+
+.numbers__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 40px;
+	line-height: 46px;
+	text-align: right;
+	margin: 0 0 20px 0;
+	color: var(--accent-color);
+}
+
+.numbers__text {
+	line-height: 20px;
+	text-align: right;
+	margin: 0 0 136px 0;
+}
+
+.numbers__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	margin-bottom: 50px;
+}
+
+.numbers__number {
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 1000;
+	font-size: 100px;
+	line-height: 118px;
+	margin: 0;
+	text-align: center;
+}
+
+.numbers__desc {
+	font-weight: 700;
+	line-height: 20px;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+}

@@ -1,0 +1,52 @@
+.about {
+	margin-top: 80px;
+}
+
+.about__title {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 40px;
+	margin: 0 0 8px 0;
+	color: var(--accent-color);
+}
+
+.about__subtitle {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 900;
+	margin: 0 0 20px 0;
+	color: var(--accent-color);
+}
+
+.about__text {
+	line-height: 20px;
+	margin: 0 0 20px;
+}
+
+.about__text:last-of-type {
+	margin: 0 0 68px 0;
+}
+
+.about__video {
+	width: 100%;
+	position: relative;
+}
+
+.about__egg {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+.about__video::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: #243e8a;
+	filter: blur(500px);
+}
