@@ -143,15 +143,16 @@
 		</nav>
 
 		<div class="preview">
-			<div class="preview__video">
-				<iframe
+			<div class="preview__video" aria-hidden="true">
+				<video
 					class="preview__iframe"
-					width="100%"
-					height="100%"
-					src="https://www.youtube.com/embed/pihgTuI2sF4?controls=0&autoplay=1&mute=1&loop=1&playlist=pihgTuI2sF4&modestbranding=1&showinfo=0&disablekb=1&iv_load_policy=3&rel=0&fs=0"
-					frameborder="0"
-					allowfullscreen
-				></iframe>
+					poster="./img/preview.jpg"
+					src="./img/video.webm"
+					type="video/webm"
+					autoplay
+					loop
+					muted
+				></video>
 			</div>
 			<div class="preview__bg"></div>
 			<header class="header">
