@@ -42,16 +42,24 @@
 .gallery__row {
 	display: flex;
 	gap: 8px;
-	animation: scroll-left 35s linear infinite;
+	animation: scroll-left 40s linear infinite;
 }
 
 .gallery__row--first {
-	animation: scroll-left 35s linear infinite;
-	animation-direction: reverse;
+	animation: scroll-right 40s linear infinite;
 }
 
 @keyframes scroll-left {
 	to {
 		transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-right {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
 	}
 }

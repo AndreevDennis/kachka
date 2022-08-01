@@ -80,11 +80,13 @@ mobileNav.addEventListener("click", (event) => {
 	}
 });
 
-// MODAL
+// MODAL & ROLL
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".modal__close");
 const confirmButton = document.querySelector(".modal__btn");
 const openModalBtn = document.querySelector("#getDuck");
+const getRows = document.querySelectorAll(".get__row");
+const modalImg = document.querySelectorAll(".modal__img");
 
 let focusables = [];
 focusables = Array.from(modal.querySelectorAll("button"));
@@ -92,19 +94,34 @@ focusables = Array.from(modal.querySelectorAll("button"));
 const handleModalKeyboard = onTab(modal, focusables);
 
 openModalBtn.addEventListener("click", () => {
-	for (let i = 0; i < focusables.length; i++) {
-		focusables[i].hidden = false;
+	for (const row of getRows) {
+		row.classList.remove("get__row--paused");
+		row.classList.add("get__row--runnig");
 	}
 
-	modal.setAttribute("aria-hidden", false);
-	modal.classList.add("modal--visible");
-	closeButton.focus();
-	document.body.style.overflowY = "hidden";
-	document.addEventListener("keydown", handleModalKeyboard);
+	setTimeout(() => {
+		for (const row of getRows) {
+			row.classList.add("get__row--paused");
+		}
+
+		for (let i = 0; i < focusables.length; i++) {
+			focusables[i].hidden = false;
+		}
+
+		modal.setAttribute("aria-hidden", false);
+		modal.classList.add("modal--visible");
+		closeButton.focus();
+		document.body.style.overflowY = "hidden";
+		document.addEventListener("keydown", handleModalKeyboard);
+	}, 1000);
 });
 
 /* Close modal on close */
 closeButton.addEventListener("click", () => {
+	for (const row of getRows) {
+		row.classList.remove("get__row--runnig");
+	}
+
 	for (let i = 0; i < focusables.length; i++) {
 		focusables[i].hidden = true;
 	}
@@ -118,6 +135,10 @@ closeButton.addEventListener("click", () => {
 
 /* Close modal on confirm */
 confirmButton.addEventListener("click", () => {
+	for (const row of getRows) {
+		row.classList.remove("get__row--runnig");
+	}
+
 	for (let i = 0; i < focusables.length; i++) {
 		focusables[i].hidden = true;
 	}
