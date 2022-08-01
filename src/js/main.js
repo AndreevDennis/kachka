@@ -34,6 +34,7 @@ function onTab(wrapper, focusableElements) {
 const mobileNav = document.querySelector(".mobile-nav");
 const headerOpenBtn = document.querySelector("#openHeader");
 const headerCloseBtn = document.querySelector("#closeHeader");
+const mobileLinks = document.querySelectorAll(".mobile-nav__link");
 
 let searchSectionElements = [];
 searchSectionElements = Array.from(mobileNav.querySelectorAll("button, a"));
@@ -62,6 +63,21 @@ headerCloseBtn.addEventListener("click", () => {
 	mobileNav.classList.remove("mobile-nav--active");
 	mobileNav.setAttribute("aria-hidden", true);
 	headerOpenBtn.focus();
+});
+
+mobileNav.addEventListener("click", (event) => {
+	const target = event.target;
+
+	if (target.tagName === "A") {
+		document.removeEventListener("keydown", handlesearchSectionKeyboard);
+
+		for (let i = 0; i < searchSectionElements.length; i++) {
+			searchSectionElements[i].hidden = true;
+		}
+
+		mobileNav.classList.remove("mobile-nav--active");
+		mobileNav.setAttribute("aria-hidden", true);
+	}
 });
 
 // MODAL
