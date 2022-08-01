@@ -47,6 +47,6 @@
 	height: 100%;
 	width: 100%;
 	background-color: #243e8a;
-	filter: blur(500px);
+	filter: blur(var(--blur));
 	z-index: -1;
 }

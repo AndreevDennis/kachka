@@ -19,7 +19,7 @@
 	height: 100%;
 	width: 100%;
 	background-color: #291025;
-	filter: blur(500px);
+	filter: blur(var(--blur));
 	z-index: -1;
 }
 
@@ -38,7 +38,7 @@
 	height: 100%;
 	width: 100%;
 	background-color: #1f1f4d;
-	filter: blur(500px);
+	filter: blur(var(--blur));
 	z-index: -1;
 }
 

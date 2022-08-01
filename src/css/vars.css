@@ -12,6 +12,8 @@
 	--opensea-color: #2081e2;
 
 	--btn-gradient: linear-gradient(90deg, #5d00fa 0%, #d70bca 100%);
+
+	--blur: 100px;
 }
 
 html {
