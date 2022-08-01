@@ -36,7 +36,6 @@
 
 .about__egg {
 	width: 100%;
-	position: relative;
 	z-index: 10;
 }
 
@@ -49,4 +48,5 @@
 	width: 100%;
 	background-color: #243e8a;
 	filter: blur(500px);
+	z-index: -1;
 }
