@@ -95,5 +95,5 @@
 }
 
 .footer__elem::marker {
-	content: url("../../img/bullet.svg");
+	content: url("../../img/dec/bullet.svg");
 }

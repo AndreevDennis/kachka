@@ -126,19 +126,6 @@
 		width: 372px;
 	}
 
-	/* GALLERY */
-	.gallery__grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.gallery__img--hidden {
-		display: block;
-	}
-
-	.gallery__img--hidden:last-of-type {
-		display: none;
-	}
-
 	/* FAQ */
 	.faq__container {
 		grid-template-columns: repeat(2, 1fr);
@@ -297,13 +284,29 @@
 		margin: 0 0 72px 0;
 	}
 
-	.gallery__grid {
-		grid-template-columns: repeat(5, 1fr);
-		margin-bottom: 64px;
+	.gallery__img {
+		width: 350px;
 	}
 
-	.gallery__img--hidden:last-of-type {
-		display: block;
+	.gallery__autoscroll {
+		gap: 30px;
+		margin-bottom: 30px;
+	}
+
+	.gallery__autoscroll:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.gallery__row {
+		gap: 30px;
+	}
+
+	.gallery__autoscroll--last {
+		display: none;
+	}
+
+	.gallery__btn {
+		margin-top: 64px;
 	}
 
 	/* FAQ */
