@@ -83,7 +83,7 @@ openModalBtn.addEventListener("click", () => {
 	modal.setAttribute("aria-hidden", false);
 	modal.classList.add("modal--visible");
 	closeButton.focus();
-	document.body.style.overflow = "hidden";
+	document.body.style.overflowY = "hidden";
 	document.addEventListener("keydown", handleModalKeyboard);
 });
 
@@ -95,7 +95,7 @@ closeButton.addEventListener("click", () => {
 
 	modal.setAttribute("aria-hidden", true);
 	modal.classList.remove("modal--visible");
-	document.body.style.overflow = "initial";
+	document.body.style.overflowY = "initial";
 	document.removeEventListener("keydown", handleModalKeyboard);
 	openModalBtn.focus();
 });
@@ -108,6 +108,6 @@ confirmButton.addEventListener("click", () => {
 
 	modal.setAttribute("aria-hidden", true);
 	modal.classList.remove("modal--visible");
-	document.body.style.overflow = "initial";
+	document.body.style.overflowY = "initial";
 	document.removeEventListener("keydown", handleModalKeyboard);
 });
