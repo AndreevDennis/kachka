@@ -33,8 +33,9 @@
 	display: flex;
 	flex: 1 0 auto;
 	overflow: hidden;
-	animation: get-scroll-left 1s ease-in-out infinite;
+	animation: get-scroll-left 3.5s ease-out infinite;
 	animation-play-state: paused;
+	animation-fill-mode: backwards;
 }
 
 .get__row--runnig {

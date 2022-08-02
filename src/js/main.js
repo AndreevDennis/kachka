@@ -88,6 +88,8 @@ const openModalBtn = document.querySelector("#getDuck");
 const getRows = document.querySelectorAll(".get__row");
 const modalImg = document.querySelectorAll(".modal__img");
 
+const getRowsAnimationDuration = 3500;
+
 let focusables = [];
 focusables = Array.from(modal.querySelectorAll("button"));
 
@@ -113,7 +115,7 @@ openModalBtn.addEventListener("click", () => {
 		closeButton.focus();
 		document.body.style.overflowY = "hidden";
 		document.addEventListener("keydown", handleModalKeyboard);
-	}, 1000);
+	}, getRowsAnimationDuration);
 });
 
 /* Close modal on close */
