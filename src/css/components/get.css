@@ -36,6 +36,7 @@
 	animation: get-scroll-left 3.5s ease-in-out infinite;
 	animation-play-state: paused;
 	animation-fill-mode: backwards;
+	transform: translate3d(0%, 0, 0);
 }
 
 .get__row--runnig {
@@ -60,7 +61,10 @@
 }
 
 @keyframes get-scroll-left {
+	from {
+		transform: translate3d(0%, 0, 0);
+	}
 	to {
-		transform: translateX(-400%);
+		transform: translate3d(-400%, 0, 0);
 	}
 }
