@@ -31,6 +31,8 @@
 }
 
 .mission__img {
+	display: block;
 	width: 275px;
+	height: auto;
 	align-self: flex-end;
 }

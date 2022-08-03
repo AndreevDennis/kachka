@@ -27,6 +27,7 @@
 .gallery__img {
 	display: block;
 	width: 175px;
+	height: auto;
 	margin-right: 8px;
 }
 
