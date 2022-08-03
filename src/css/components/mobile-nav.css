@@ -19,10 +19,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 30px;
 	margin: 70px 0 0 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+.mobile-nav__elem {
+	margin-bottom: 30px;
+}
+
+.mobile-nav__elem:last-child {
+	margin-bottom: 0;
 }
 
 .mobile-nav__link {

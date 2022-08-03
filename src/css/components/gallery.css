@@ -25,12 +25,13 @@
 }
 
 .gallery__img {
+	display: block;
 	width: 175px;
+	margin-right: 8px;
 }
 
 .gallery__autoscroll {
 	display: flex;
-	gap: 8px;
 	overflow: hidden;
 	margin-bottom: 8px;
 }
@@ -41,7 +42,6 @@
 
 .gallery__row {
 	display: flex;
-	gap: 8px;
 	animation: scroll-left 40s linear infinite;
 	transform: translate3d(0%, 0, 0);
 }

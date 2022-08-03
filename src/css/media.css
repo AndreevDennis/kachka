@@ -57,7 +57,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 40px;
+	}
+
+	.about__info {
+		margin-right: 40px;
 	}
 
 	.about__text {
@@ -95,8 +98,11 @@
 	.numbers__wrapper {
 		flex-direction: row;
 		justify-content: space-evenly;
-		gap: 0;
 		margin-bottom: 72px;
+	}
+
+	.numbers__block {
+		margin: 0;
 	}
 
 	/* TIMER */
@@ -291,7 +297,6 @@
 	}
 
 	.gallery__autoscroll {
-		gap: 30px;
 		margin-bottom: 30px;
 	}
 
@@ -299,8 +304,8 @@
 		margin-bottom: 0;
 	}
 
-	.gallery__row {
-		gap: 30px;
+	.gallery__img {
+		margin-right: 30px;
 	}
 
 	.gallery__autoscroll--last {
@@ -463,8 +468,8 @@
 	}
 
 	/* ABOUT */
-	.about__container {
-		gap: 20px;
+	.about__info {
+		margin-right: 0;
 	}
 
 	.about__title {

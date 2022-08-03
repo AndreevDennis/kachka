@@ -21,9 +21,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
 	background-image: none;
 	background-color: var(--opensea-color);
+}
+
+.btn--opensea svg {
+	margin-right: 10px;
 }
 
 .btn--gallery {

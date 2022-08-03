@@ -20,8 +20,15 @@
 .numbers__wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
 	margin-bottom: 50px;
+}
+
+.numbers__block {
+	margin-bottom: 50px;
+}
+
+.numbers__block:last-child {
+	margin-bottom: 0;
 }
 
 .numbers__number {

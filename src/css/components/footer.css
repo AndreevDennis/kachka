@@ -7,7 +7,14 @@
 .footer__grid {
 	display: flex;
 	justify-content: space-around;
-	gap: 21px;
+}
+
+.footer__col {
+	margin-right: 21px;
+}
+
+.footer__col:last-child {
+	margin-right: 0;
 }
 
 .footer__title {
@@ -29,12 +36,16 @@
 .footer__socials {
 	display: flex;
 	align-items: center;
-	gap: 25px;
 	margin-bottom: 68px;
 }
 
 .footer__social {
 	text-decoration: none;
+	margin-right: 25px;
+}
+
+.footer__social:last-child {
+	margin-right: 0;
 }
 
 .footer__dec {

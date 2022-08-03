@@ -28,10 +28,17 @@
 .header__menu {
 	display: none;
 	flex-wrap: wrap;
-	gap: 30px;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+.header__elem {
+	margin-right: 30px;
+}
+
+.header__elem:last-child {
+	margin-right: 0;
 }
 
 .header__link {
