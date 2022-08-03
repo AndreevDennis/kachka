@@ -14,7 +14,10 @@
 .faq__duck::before {
 	content: "";
 	position: absolute;
-	inset: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	border-radius: 50%;
 	height: 100%;
 	width: 100%;
@@ -33,7 +36,10 @@
 .faq__gun::before {
 	content: "";
 	position: absolute;
-	inset: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	border-radius: 50%;
 	height: 100%;
 	width: 100%;
@@ -80,7 +86,10 @@
 .faq__text::before {
 	content: "";
 	position: absolute;
-	inset: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	border-radius: 60px;
 	border: 3px solid transparent;
 	-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
