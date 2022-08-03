@@ -101,9 +101,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	const confirmButton = document.querySelector(".modal__btn");
 	const openModalBtn = document.querySelector("#getDuck");
 	const getRows = document.querySelectorAll(".get__row");
-	const modalImg = document.querySelectorAll(".modal__img");
+	const modalImg = document.querySelector(".modal__img");
 
 	const getRowsAnimationDuration = 3500;
+
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
 
 	let focusables = [];
 	focusables = Array.from(modal.querySelectorAll("button"));
@@ -111,10 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	const handleModalKeyboard = onTab(modal, focusables);
 
 	openModalBtn.addEventListener("click", () => {
+		openModalBtn.disabled = true;
+
 		for (const row of getRows) {
 			row.classList.remove("get__row--paused");
 			row.classList.add("get__row--runnig");
 		}
+
+		const randomNumber = getRandomInt(1, 41);
+		modalImg.src = `./img/all-ducks/${randomNumber}.png`;
 
 		setTimeout(() => {
 			for (const row of getRows) {
@@ -135,6 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	/* Close modal on close */
 	closeButton.addEventListener("click", () => {
+		openModalBtn.disabled = false;
+
 		for (const row of getRows) {
 			row.classList.remove("get__row--runnig");
 		}
