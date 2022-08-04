@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	const bgVideo = document.querySelector(".preview__iframe");
 	const playVideoBtn = document.querySelector("#playVideo");
 
-	playVideoBtn.addEventListener("click", () => {
-		bgVideo.play();
-		playVideoBtn.classList.add("preview__play--hiden");
-		playVideoBtn.disabled = true;
-	});
+	// playVideoBtn.addEventListener("click", () => {
+	// 	bgVideo.play();
+	// 	playVideoBtn.classList.add("preview__play--hiden");
+	// 	playVideoBtn.disabled = true;
+	// });
 
 	if (window.matchMedia("(min-width: 1024px)").matches) {
-		playVideoBtn.classList.add("preview__play--hiden");
-		playVideoBtn.disabled = true;
+		// playVideoBtn.classList.add("preview__play--hiden");
+		// playVideoBtn.disabled = true;
 		// const sourseOne = document.createElement("source");
 		// sourseOne.src = "./img/videos/video.webm";
 		// sourseOne.type = "video/webm";
