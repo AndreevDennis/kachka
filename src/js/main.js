@@ -17,19 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	const bgVideo = document.querySelector(".preview__iframe");
 
 	if (window.matchMedia("(min-width: 1024px)").matches) {
-		const sourseOne = document.createElement("source");
-		sourseOne.src = "./img/videos/video.webm";
-		sourseOne.type = "video/webm";
+		// const sourseOne = document.createElement("source");
+		// sourseOne.src = "./img/videos/video.webm";
+		// sourseOne.type = "video/webm";
 
-		const sourseTwo = document.createElement("source");
-		sourseTwo.src = "./img/videos/video.mp4";
-		sourseTwo.type = "video/mp4";
+		// const sourseTwo = document.createElement("source");
+		// sourseTwo.src = "./img/videos/video.mp4";
+		// sourseTwo.type = "video/mp4";
 
-		bgVideo.appendChild(sourseOne);
-		bgVideo.appendChild(sourseTwo);
+		// bgVideo.appendChild(sourseOne);
+		// bgVideo.appendChild(sourseTwo);
 
-		playVideo(eggVideo);
-		playVideo(bgVideo);
+		// playVideo(bgVideo);
 
 		const sourseThree = document.createElement("source");
 		sourseThree.src = "./img/videos/egg.webm";
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			eggImg.classList.add("about__egg--img--none");
 			eggVideo.classList.add("about__egg--visible");
 			eggVideo.appendChild(sourseThree);
+			playVideo(eggVideo);
 		}
 	}
 
