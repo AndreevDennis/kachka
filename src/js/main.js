@@ -146,6 +146,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	const getRows = document.querySelectorAll(".get__row");
 	const modalImg = document.querySelector(".modal__img");
 
+	setTimeout(() => {
+		modal.style.display = "flex";
+	}, 20);
+
 	const getRowsAnimationDuration = 3500;
 
 	function getRandomInt(min, max) {
