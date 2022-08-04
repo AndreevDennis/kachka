@@ -155,15 +155,15 @@
 				<video
 					class="preview__iframe"
 					poster="./img/videos/preview.jpg"
-					src="./img/videos/video1.mp4"
-					type="video/mp4"
-					autoplay
 					loop
 					muted
+					autoplay
 					playsinline
 					width="1280"
 					height="720"
-				></video>
+				>
+					<source src="./img/videos/video1.mp4" type="video/mp4" />
+				</video>
 			</div>
 			<div class="preview__bg"></div>
 			<header class="header">
@@ -200,7 +200,7 @@
 						</h1>
 						<p class="preview__text">100% Created and approved by Ukrainian national "biolabs"</p>
 					</div>
-					<button class="preview__play" aria-label="Open video">
+					<button id="playVideo" class="preview__play" aria-label="Open video">
 						<svg focusable="false" aria-hidden="true" width="65" height="65">
 							<use xlink:href="#play-btn" />
 						</svg>

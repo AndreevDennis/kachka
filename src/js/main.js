@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const eggVideo = document.querySelector(".about__egg");
 	const eggImg = document.querySelector(".about__egg--img");
 	const bgVideo = document.querySelector(".preview__iframe");
+	const playVideoBtn = document.querySelector("#playVideo");
+
+	playVideoBtn.addEventListener("click", () => {
+		bgVideo.play();
+	});
 
 	if (window.matchMedia("(min-width: 1024px)").matches) {
 		// const sourseOne = document.createElement("source");
