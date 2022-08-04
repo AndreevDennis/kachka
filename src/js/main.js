@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	const bgVideo = document.querySelector(".preview__iframe");
 
 	if (window.matchMedia("(min-width: 1024px)").matches) {
-		const sourseOne = document.createElement("source");
-		sourseOne.src = "./img/videos/video.webm";
-		sourseOne.type = "video/webm";
+		// const sourseOne = document.createElement("source");
+		// sourseOne.src = "./img/videos/video.webm";
+		// sourseOne.type = "video/webm";
 
 		const sourseTwo = document.createElement("source");
 		sourseTwo.src = "./img/videos/video.mp4";
 		sourseTwo.type = "video/mp4";
 
-		bgVideo.appendChild(sourseOne);
+		// bgVideo.appendChild(sourseOne);
 		bgVideo.appendChild(sourseTwo);
 
 		playVideo(eggVideo);
