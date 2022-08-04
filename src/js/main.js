@@ -1,28 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const eggVideo = document.querySelector(".about__egg");
-	const bgVideo = document.querySelector(".preview__iframe");
+	const userAgentString = navigator.userAgent;
+	let chromeAgent = userAgentString.indexOf("Chrome") > -1;
+	let safariAgent = userAgentString.indexOf("Safari") > -1;
 
-	function videoFallback(video) {
-		var img = video.querySelector("img");
-		if (img) video.parentNode.replaceChild(img, video);
-	}
+	// Discard Safari since it also matches Chrome
+	if (chromeAgent && safariAgent) safariAgent = false;
 
-	eggVideo.onerror = function () {
-		videoFallback(eggVideo);
-	};
-
-	async function playVideo(videoElem) {
+	function playVideo(videoElem) {
 		if (videoElem.tagName !== "VIDEO") return;
 
-		try {
-			await videoElem.play();
-		} catch (err) {
-			console.log(err);
-		}
+		videoElem.play();
 	}
 
-	playVideo(eggVideo);
-	playVideo(bgVideo);
+	const eggVideo = document.querySelector(".about__egg");
+	const eggImg = document.querySelector(".about__egg--img");
+	const bgVideo = document.querySelector(".preview__iframe");
+
+	if (window.matchMedia("(min-width: 1024px)").matches) {
+		const sourseOne = document.createElement("source");
+		sourseOne.src = "./img/videos/video.webm";
+		sourseOne.type = "video/webm";
+
+		const sourseTwo = document.createElement("source");
+		sourseTwo.src = "./img/videos/video.mp4";
+		sourseTwo.type = "video/mp4";
+
+		bgVideo.appendChild(sourseOne);
+		bgVideo.appendChild(sourseTwo);
+
+		playVideo(eggVideo);
+		playVideo(bgVideo);
+
+		const sourseThree = document.createElement("source");
+		sourseThree.src = "./img/videos/egg.webm";
+		sourseThree.type = "video/webm";
+
+		if (!safariAgent) {
+			eggImg.classList.add("about__egg--img--none");
+			eggVideo.classList.add("about__egg--visible");
+			eggVideo.appendChild(sourseThree);
+		}
+	}
 
 	function onTab(wrapper, focusableElements) {
 		const block = wrapper;

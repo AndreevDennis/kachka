@@ -5,6 +5,10 @@
 	width: 100vw;
 	padding-top: 20px;
 	position: relative;
+	background-image: url("../../img/videos/preview.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .preview__bg {

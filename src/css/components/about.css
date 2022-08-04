@@ -35,12 +35,29 @@
 }
 
 .about__egg {
+	display: none;
 	width: 100%;
 	z-index: 10;
 }
 
+.about__egg--visible {
+	display: block;
+	transform: rotate(20.63deg);
+}
+
 .about__egg--img {
+	width: 100%;
+	z-index: 10;
 	transform: rotate(0);
+}
+
+.about__egg--img--none {
+	display: none;
+}
+
+.about__egg--img img {
+	width: 100%;
+	height: auto;
 }
 
 .about__video::after {

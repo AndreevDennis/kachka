@@ -76,14 +76,6 @@
 		margin: 0;
 	}
 
-	.about__egg {
-		transform: rotate(20.63deg);
-	}
-
-	.about__egg--img {
-		transform: rotate(0);
-	}
-
 	/* NUMBERS */
 	.numbers {
 		margin-top: 157px;
