@@ -152,16 +152,10 @@
 
 		<div class="preview">
 			<div class="preview__video" aria-hidden="true">
-				<video
-					class="preview__iframe"
-					poster="./img/videos/preview.jpg"
-					src="./img/videos/video.webm"
-					type="video/webm"
-					autoplay
-					loop
-					muted
-					playsinline
-				></video>
+				<video class="preview__iframe" poster="./img/videos/preview.jpg" autoplay loop muted playsinline>
+					<source src="./img/videos/video.webm" type="video/webm" />
+					<source src="./img/videos/video.mp4" type="video/mp4" />
+				</video>
 			</div>
 			<div class="preview__bg"></div>
 			<header class="header">
@@ -238,17 +232,17 @@
 								</p>
 							</div>
 							<div class="about__video">
-								<video
-									class="about__egg"
-									poster="./img/videos/egg.png"
-									src="./img/videos/egg.webm"
-									type="video/webm"
-									autoplay
-									loop
-									muted
-									playsinline
-									aria-label="Spinning egg with ammo belt"
-								></video>
+								<video class="about__egg" autoplay loop muted playsinline aria-label="Spinning egg with ammo belt">
+									<source src="./img/videos/egg.webm" type="video/webm" />
+									<picture>
+										<source srcset="./img/videos/egg.webp" type="image/webp" />
+										<img
+											class="about__egg about__egg--img"
+											src="./img/videos/egg.png"
+											alt="Spinning egg with ammo belt"
+										/>
+									</picture>
+								</video>
 							</div>
 						</div>
 					</div>

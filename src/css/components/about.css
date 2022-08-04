@@ -39,6 +39,10 @@
 	z-index: 10;
 }
 
+.about__egg--img {
+	transform: rotate(0);
+}
+
 .about__video::after {
 	content: "";
 	position: absolute;

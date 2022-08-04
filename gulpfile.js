@@ -60,7 +60,7 @@ const fonts = () => {
 
 const imgs = () => {
 	return gulp
-		.src("src/img/**/*.{jpg,png,svg,gif,ico,webp,webm}")
+		.src("src/img/**/*.{jpg,png,svg,gif,ico,webp,webm,mp4}")
 		.pipe(gulp.dest("dist/img/"))
 		.pipe(
 			browserSync.stream({

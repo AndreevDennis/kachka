@@ -2,7 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	const eggVideo = document.querySelector(".about__egg");
 	const bgVideo = document.querySelector(".preview__iframe");
 
+	function videoFallback(video) {
+		var img = video.querySelector("picture");
+		if (img) video.parentNode.replaceChild(img, video);
+	}
+
+	eggVideo.onerror = function () {
+		videoFallback(eggVideo);
+	};
+
 	async function playVideo(videoElem) {
+		if (videoElem.tagName !== "VIDEO") return;
+
 		try {
 			await videoElem.play();
 		} catch (err) {
