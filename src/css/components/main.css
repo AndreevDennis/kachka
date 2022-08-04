@@ -1,3 +1,7 @@
+.main {
+	overflow-x: hidden;
+}
+
 .main__container {
 	position: relative;
 	z-index: 1;

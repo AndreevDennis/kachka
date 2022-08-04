@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const mobileNav = document.querySelector(".mobile-nav");
 	const headerOpenBtn = document.querySelector("#openHeader");
 	const headerCloseBtn = document.querySelector("#closeHeader");
-	const mobileLinks = document.querySelectorAll(".mobile-nav__link");
 
 	let searchSectionElements = [];
 	searchSectionElements = Array.from(mobileNav.querySelectorAll("button, a"));
@@ -76,6 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		mobileNav.classList.add("mobile-nav--active");
 		mobileNav.setAttribute("aria-hidden", false);
+		document.body.classList.remove("body__overflow--visible");
+		document.body.classList.add("body__overflow--hidden");
 		mobileNav.focus();
 	});
 
@@ -88,6 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		mobileNav.classList.remove("mobile-nav--active");
 		mobileNav.setAttribute("aria-hidden", true);
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
 		headerOpenBtn.focus();
 	});
 
@@ -103,6 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			mobileNav.classList.remove("mobile-nav--active");
 			mobileNav.setAttribute("aria-hidden", true);
+			document.body.classList.remove("body__overflow--hidden");
+			document.body.classList.add("body__overflow--visible");
 		}
 	});
 
@@ -150,7 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			modal.setAttribute("aria-hidden", false);
 			modal.classList.add("modal--visible");
 			closeButton.focus();
-			document.body.style.overflowY = "hidden";
+			document.body.classList.remove("body__overflow--visible");
+			document.body.classList.add("body__overflow--hidden");
 			document.addEventListener("keydown", handleModalKeyboard);
 		}, getRowsAnimationDuration);
 	});
@@ -169,7 +175,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		modal.setAttribute("aria-hidden", true);
 		modal.classList.remove("modal--visible");
-		document.body.style.overflowY = "initial";
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
 		document.removeEventListener("keydown", handleModalKeyboard);
 		openModalBtn.focus();
 	});
@@ -186,7 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		modal.setAttribute("aria-hidden", true);
 		modal.classList.remove("modal--visible");
-		document.body.style.overflowY = "initial";
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
 		document.removeEventListener("keydown", handleModalKeyboard);
 	});
 });
