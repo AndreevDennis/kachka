@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const bgVideo = document.querySelector(".preview__iframe");
 
 	function videoFallback(video) {
-		var img = video.querySelector("picture");
+		var img = video.querySelector("img");
 		if (img) video.parentNode.replaceChild(img, video);
 	}
 
