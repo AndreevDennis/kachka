@@ -87,3 +87,8 @@
 	margin: 0 auto;
 	cursor: pointer;
 }
+
+.preview__play--hiden {
+	opacity: 0;
+	cursor: auto;
+}

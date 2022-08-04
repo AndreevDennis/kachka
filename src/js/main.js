@@ -19,9 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	playVideoBtn.addEventListener("click", () => {
 		bgVideo.play();
+		playVideoBtn.classList.add("preview__play--hiden");
+		playVideoBtn.disabled = true;
 	});
 
 	if (window.matchMedia("(min-width: 1024px)").matches) {
+		playVideoBtn.classList.add("preview__play--hiden");
+		playVideoBtn.disabled = true;
 		// const sourseOne = document.createElement("source");
 		// sourseOne.src = "./img/videos/video.webm";
 		// sourseOne.type = "video/webm";
