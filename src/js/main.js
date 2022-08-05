@@ -52,6 +52,32 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
+	// TIMER
+	const timerContainer = document.querySelector(".timer__time");
+
+	const finalDate = new Date("August 15, 2022 00:01:00");
+
+	function updateCounter() {
+		const currentTime = new Date();
+		const diff = finalDate - currentTime;
+
+		const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
+		let hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
+		let minutesLeft = Math.floor(diff / 1000 / 60) % 60;
+
+		hoursLeft < 10 ? (hoursLeft = "0" + hoursLeft) : hoursLeft;
+		minutesLeft < 10 ? (minutesLeft = "0" + minutesLeft) : minutesLeft;
+
+		const finalTime = `${daysLeft} : ${hoursLeft} : ${minutesLeft}`;
+		const metaTime = `${daysLeft}:${hoursLeft}:${minutesLeft}`;
+
+		timerContainer.innerHTML = finalTime;
+		timerContainer.dateTime = metaTime;
+	}
+
+	updateCounter();
+	setInterval(updateCounter, 1000);
+
 	function onTab(wrapper, focusableElements) {
 		const block = wrapper;
 		const elements = focusableElements;
