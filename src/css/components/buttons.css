@@ -1,5 +1,7 @@
 .btn {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 48px;
 	border-radius: 46px;
@@ -18,9 +20,6 @@
 }
 
 .btn--opensea {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-image: none;
 	background-color: var(--opensea-color);
 }
@@ -30,8 +29,6 @@
 }
 
 .btn--gallery {
-	display: block;
-	margin: 0 auto;
 	background-image: none;
 	background-color: #5d00fa;
 }

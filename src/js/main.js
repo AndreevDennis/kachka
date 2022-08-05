@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+	// VIDEOS
 	const userAgentString = navigator.userAgent;
 	let chromeAgent = userAgentString.indexOf("Chrome") > -1;
 	let safariAgent = userAgentString.indexOf("Safari") > -1;
@@ -214,6 +215,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	/* Close modal on confirm */
 	confirmButton.addEventListener("click", () => {
+		openModalBtn.disabled = false;
+
 		for (const row of getRows) {
 			row.classList.remove("get__row--runnig");
 		}
