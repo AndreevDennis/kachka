@@ -22,6 +22,7 @@
 
 .timer__wrapper {
 	width: 50%;
+	top: -20px;
 	position: relative;
 }
 

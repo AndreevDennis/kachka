@@ -33,6 +33,7 @@
 .mission__img {
 	display: block;
 	width: 275px;
+	margin: 0 auto;
 	height: auto;
 	align-self: flex-end;
 }

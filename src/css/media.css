@@ -122,8 +122,10 @@
 
 	.mission__img {
 		position: absolute;
-		top: -87px;
-		right: 0;
+		/* top: -87px;
+		right: 0; */
+		top: -95px;
+		right: -5px;
 		z-index: -1;
 		width: 372px;
 	}
@@ -159,7 +161,7 @@
 @media screen and (min-width: 880px) {
 	/* TIMER */
 	.timer__wrapper {
-		top: -450px;
+		top: -400px;
 		width: 35%;
 	}
 }
@@ -238,7 +240,7 @@
 
 	.timer__wrapper {
 		top: -550px;
-		width: 38%;
+		width: 50%;
 	}
 
 	/* NUMBERS */
@@ -272,7 +274,8 @@
 	}
 
 	.mission__img {
-		top: -99px;
+		top: -110px;
+		right: -20px;
 		width: 463px;
 	}
 
@@ -288,8 +291,10 @@
 		margin: 0 0 72px 0;
 	}
 
-	.gallery__img {
+	.galerry__block {
 		width: 350px;
+		height: 350px;
+		margin-right: 30px;
 	}
 
 	.gallery__autoscroll {
@@ -300,16 +305,16 @@
 		margin-bottom: 0;
 	}
 
-	.gallery__img {
-		margin-right: 30px;
-	}
-
 	.gallery__autoscroll--last {
 		display: none;
 	}
 
 	.gallery__btn {
 		margin-top: 64px;
+	}
+
+	.galerry__block::before {
+		font-size: 300px;
 	}
 
 	/* FAQ */
@@ -437,6 +442,13 @@
 	.modal__dec {
 		width: 450px;
 	}
+
+	/* MISSION */
+	.mission__img {
+		top: -175px;
+		right: -80px;
+		width: auto;
+	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -505,7 +517,9 @@
 	}
 
 	.timer__wrapper {
-		width: 35%;
+		/* width: 35%; */
+		left: -80px;
+		top: -700px;
 	}
 
 	/* MISSION */
@@ -566,7 +580,8 @@
 
 	/* TIMER */
 	.timer__wrapper {
-		top: -700px;
+		top: -780px;
+		left: 0;
 	}
 
 	/* FAQ */
