@@ -49,12 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		const currentTime = new Date();
 		const diff = finalDate - currentTime;
 
-		const daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
+		let daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
 		let hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
 		let minutesLeft = Math.floor(diff / 1000 / 60) % 60;
 
-		hoursLeft < 10 ? (hoursLeft = "0" + hoursLeft) : hoursLeft;
-		minutesLeft < 10 ? (minutesLeft = "0" + minutesLeft) : minutesLeft;
+		daysLeft < 0 ? (daysLeft = 0) : daysLeft;
+
+		if (hoursLeft < 10 && hoursLeft > 0) {
+			hoursLeft = "0" + hoursLeft;
+		} else if (hoursLeft < 0) {
+			hoursLeft = 0;
+		}
+
+		if (minutesLeft < 10 && minutesLeft > 0) {
+			minutesLeft = "0" + minutesLeft;
+		} else if (minutesLeft < 0) {
+			minutesLeft = 0;
+		}
 
 		const finalTime = `${daysLeft} : ${hoursLeft} : ${minutesLeft}`;
 		const metaTime = `${daysLeft}:${hoursLeft}:${minutesLeft}`;
