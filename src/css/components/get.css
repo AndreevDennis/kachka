@@ -13,10 +13,6 @@
 	color: #df1931;
 }
 
-.get__title--blue {
-	color: var(--opensea-color);
-}
-
 .get__autoscroll {
 	display: flex;
 	height: 296px;
