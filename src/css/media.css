@@ -144,6 +144,10 @@
 		top: -90px;
 	}
 
+	.faq__text--last {
+		max-width: 540px;
+	}
+
 	/* GET */
 	.get__autoscroll {
 		height: 587px;
