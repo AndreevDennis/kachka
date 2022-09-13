@@ -3,10 +3,9 @@
 }
 
 .team__title {
-	font-family: "Roboto Flex", sans-serif;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 40px;
 	line-height: 47px;
-	font-weight: 1000;
 	margin: 0 0 54px 0;
 	text-align: center;
 	color: var(--accent-color);

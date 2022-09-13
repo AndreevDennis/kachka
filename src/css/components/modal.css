@@ -42,12 +42,9 @@
 }
 
 .modal__title {
-	font-family: "Roboto Flex", sans-serif;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 32px;
 	line-height: 38px;
-	font-stretch: 151%;
-	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
-		"YTDE" -203, "YTFI" 738, "opsz" 29;
 	margin: 0 0 16px 0;
 }
 

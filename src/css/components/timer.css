@@ -4,9 +4,9 @@
 }
 
 .timer__title {
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: 900;
 	color: var(--accent-color);
 	text-align: center;
 	margin: 0 0 20px 0;
@@ -14,7 +14,7 @@
 
 .timer__time {
 	display: block;
-	font-family: "Roboto Flex", sans-serif;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 40px;
 	line-height: 46px;
 	text-align: center;
