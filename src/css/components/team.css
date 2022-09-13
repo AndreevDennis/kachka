@@ -28,6 +28,11 @@
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+.team__avatar:hover {
+	transform: scale(1.1);
 }
 
 .team__name {

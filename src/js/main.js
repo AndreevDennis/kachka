@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// TIMER
 	const timerContainer = document.querySelector(".timer__time");
 
-	const finalDate = new Date("August 15, 2022 00:01:00");
+	const finalDate = new Date("October 14, 2022 00:01:00");
 
 	function updateCounter() {
 		const currentTime = new Date();
