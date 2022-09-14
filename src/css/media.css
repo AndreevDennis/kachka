@@ -110,6 +110,10 @@
 		z-index: -1;
 	}
 
+	.timer__drons {
+		width: 25%;
+	}
+
 	/* MISSIONS */
 	.mission {
 		padding-bottom: 93px;
@@ -165,7 +169,7 @@
 @media screen and (min-width: 880px) {
 	/* TIMER */
 	.timer__wrapper {
-		top: -400px;
+		top: -450px;
 		width: 35%;
 	}
 }
@@ -243,7 +247,7 @@
 
 	.timer__wrapper {
 		top: -550px;
-		width: 50%;
+		width: 30%;
 	}
 
 	/* NUMBERS */
@@ -524,9 +528,7 @@
 	}
 
 	.timer__wrapper {
-		/* width: 35%; */
-		left: -80px;
-		top: -700px;
+		width: 35%;
 	}
 
 	/* MISSION */
@@ -587,8 +589,7 @@
 
 	/* TIMER */
 	.timer__wrapper {
-		top: -780px;
-		left: 0;
+		top: -700px;
 	}
 
 	/* FAQ */
