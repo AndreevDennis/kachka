@@ -48,6 +48,30 @@
 	z-index: -1;
 }
 
+.faq__ammo {
+	display: none;
+	position: absolute;
+	right: 30px;
+	bottom: -50px;
+	width: 20%;
+	z-index: 3;
+}
+
+.faq__ammo::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	background-color: #291025;
+	filter: blur(var(--blur));
+	z-index: -1;
+}
+
 .faq__img {
 	width: 100%;
 	height: auto;

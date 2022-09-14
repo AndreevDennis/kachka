@@ -450,6 +450,10 @@
 		top: -130px;
 	}
 
+	.faq__ammo {
+		display: block;
+	}
+
 	/* MODAL */
 	.modal__dec {
 		width: 450px;
