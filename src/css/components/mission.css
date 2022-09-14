@@ -26,10 +26,71 @@
 	margin: 0;
 }
 
-.mission__img {
+.mission__dec {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 345px;
+	width: 100%;
+	margin: 40px auto 60px auto;
+}
+
+.mission__description {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	width: 100%;
+}
+
+.mission__subText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0;
+	text-align: center;
+}
+
+.mission__number {
+	font-size: 60px;
+	line-height: 57px;
+	color: var(--accent-color);
+}
+
+.mission__picture {
+	display: inline-block;
+	position: relative;
+}
+
+.mission__picture::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 94px;
+	height: 94px;
+	background: conic-gradient(from 180deg at 50% 50%, #d9d9d9 0deg, rgba(217, 217, 217, 0) 360deg);
+	border-radius: 50%;
+}
+
+.mission__picture:last-of-type:before {
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.mission__duck {
 	display: block;
-	width: 275px;
-	margin: 0 auto;
+	position: relative;
+	width: 134px;
 	height: auto;
-	align-self: flex-end;
+}
+
+.mission__solder {
+	display: block;
+	position: relative;
+	width: 127px;
+	height: auto;
+	padding-top: 10px;
 }

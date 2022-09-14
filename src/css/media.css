@@ -11,17 +11,20 @@
 
 @media screen and (min-width: 590px) {
 	/* MISSIONS */
-	.mission__container {
-		flex-direction: row;
-		justify-content: space-between;
+	.mission__title {
+		text-align: center;
 	}
 
 	.mission__text {
 		max-width: 370px;
+		margin: 0 auto 18px auto;
+		text-align: center;
 	}
 
 	.mission__text:last-of-type {
 		max-width: 420px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	/* FAQ */
@@ -122,16 +125,26 @@
 	.mission__container {
 		position: relative;
 		z-index: 1;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
-	.mission__img {
-		position: absolute;
-		/* top: -87px;
-		right: 0; */
-		top: -95px;
-		right: -5px;
-		z-index: -1;
-		width: 372px;
+	.mission__dec {
+		margin: 0;
+	}
+
+	.mission__title {
+		text-align: left;
+	}
+
+	.mission__text {
+		margin: 0 0 18px 0;
+		text-align: left;
+	}
+
+	.mission__text:last-of-type {
+		margin: 0;
+		text-align: left;
 	}
 
 	/* FAQ */
@@ -268,6 +281,10 @@
 	}
 
 	/* MISSIONS */
+	.mission {
+		padding-bottom: 93px;
+	}
+
 	.mission__title {
 		font-size: 32px;
 		line-height: 37px;
@@ -283,12 +300,6 @@
 
 	.mission__text:last-of-type {
 		max-width: 610px;
-	}
-
-	.mission__img {
-		top: -110px;
-		right: -20px;
-		width: 463px;
 	}
 
 	/* GALLERY */
@@ -460,10 +471,33 @@
 	}
 
 	/* MISSION */
-	.mission__img {
-		top: -175px;
-		right: -80px;
+	.mission__dec {
+		flex: 0 1 0;
+		max-width: none;
+	}
+
+	.mission__picture:last-of-type:before {
+		margin-top: 15px;
+	}
+
+	.mission__duck,
+	.mission__solder {
 		width: auto;
+	}
+
+	.mission__picture::before {
+		width: 191px;
+		height: 191px;
+	}
+
+	.mission__number {
+		font-size: 100px;
+		line-height: 95px;
+	}
+
+	.mission__subText {
+		font-size: 32px;
+		line-height: 43px;
 	}
 }
 
