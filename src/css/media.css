@@ -408,6 +408,17 @@
 	.modal__dec {
 		width: 400px;
 	}
+
+	/* PRELOAD */
+	.preload__img {
+		width: 364px;
+		margin-bottom: 140px;
+	}
+
+	.preload__text {
+		font-size: 60px;
+		line-height: 66px;
+	}
 }
 
 @media screen and (min-width: 1142px) {

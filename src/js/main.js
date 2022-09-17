@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+	const bgVideo = document.querySelector(".preview__iframe");
+
+	// PRELOAD
+	const preloadDiv = document.querySelector(".preload");
+
+	setTimeout(() => {
+		preloadDiv.classList.add("preload--hidden");
+		bgVideo.classList.remove("preview__iframe--paused");
+		bgVideo.play();
+	}, 4500);
+
 	// VIDEOS
 	const userAgentString = navigator.userAgent;
 	let chromeAgent = userAgentString.indexOf("Chrome") > -1;
@@ -15,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const eggVideo = document.querySelector(".about__egg");
 	const eggImg = document.querySelector(".about__egg--img");
-	const bgVideo = document.querySelector(".preview__iframe");
 	const playVideoBtn = document.querySelector("#playVideo");
 
 	playVideoBtn.addEventListener("click", () => {
-		bgVideo.play();
+		// bgVideo.play();
 		playVideoBtn.classList.add("preview__play--hiden");
 		playVideoBtn.disabled = true;
 	});
@@ -164,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	// Observers
+	// OBSERVERS
 	const roadmapOptions = {
 		root: null,
 		rootMargin: "0px",
@@ -182,7 +192,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const roadmapObserver = new IntersectionObserver(roadmapCallback, roadmapOptions);
 
-	const roadmapElements = document.querySelectorAll(".roadmap__block, .roadmap__number");
+	const roadmapElements = document.querySelectorAll(
+		".roadmap__block, .roadmap__number, .roadmap__list, .roadmap__subtitle"
+	);
 	roadmapElements.forEach((el) => roadmapObserver.observe(el));
 
 	const videoOptions = {
@@ -193,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const videoCallback = (entries, observer) => {
 		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
+			if (entry.isIntersecting && !entry.target.classList.contains("preview__iframe--paused")) {
 				entry.target.play();
 			} else {
 				entry.target.pause();

@@ -102,6 +102,13 @@
 			</symbol>
 		</svg>
 
+		<div class="preload">
+			<div class="preload__container">
+				<img src="./img/preload.svg" alt="Bio weapon" class="preload__img" width="364" height="310" />
+				<p class="preload__text">Welcome to BioLab</p>
+			</div>
+		</div>
+
 		<div aria-hidden="true" class="modal">
 			<div class="container flex-1" role="dialog" aria-modal="true" aria-label="Modal window">
 				<div class="modal__container">
@@ -154,11 +161,10 @@
 		<div class="preview">
 			<div class="preview__video" aria-hidden="true">
 				<video
-					class="preview__iframe"
+					class="preview__iframe preview__iframe--paused"
 					poster="./img/videos/preview.jpg"
 					loop
 					muted
-					autoplay
 					playsinline
 					width="1280"
 					height="720"
