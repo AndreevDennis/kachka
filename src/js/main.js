@@ -164,13 +164,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	const options = {
+	// Observers
+	const roadmapOptions = {
 		root: null,
 		rootMargin: "0px",
 		treshold: 0.3,
 	};
 
-	const callback = (entries, observer) => {
+	const roadmapCallback = (entries, observer) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add("roadmap__visible");
@@ -179,10 +180,31 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	};
 
-	let observer = new IntersectionObserver(callback, options);
+	const roadmapObserver = new IntersectionObserver(roadmapCallback, roadmapOptions);
 
 	const roadmapElements = document.querySelectorAll(".roadmap__block, .roadmap__number");
-	roadmapElements.forEach((el) => observer.observe(el));
+	roadmapElements.forEach((el) => roadmapObserver.observe(el));
+
+	const videoOptions = {
+		root: null,
+		rootMargin: "0px",
+		treshold: 0.1,
+	};
+
+	const videoCallback = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.play();
+			} else {
+				entry.target.pause();
+			}
+		});
+	};
+
+	let videoObserver = new IntersectionObserver(videoCallback, videoOptions);
+
+	const video = document.querySelector(".preview__iframe");
+	videoObserver.observe(video);
 
 	// MODAL & ROLL
 	const modal = document.querySelector(".modal");
