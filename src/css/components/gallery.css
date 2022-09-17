@@ -6,12 +6,8 @@
 }
 
 .gallery__title {
-	font-family: "Roboto Flex", sans-serif;
-	font-weight: 1000;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 40px;
-	font-stretch: 151%;
-	font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750,
-		"YTDE" -203, "YTFI" 738, "opsz" 29;
 	line-height: 47px;
 	text-align: center;
 	margin: 0 0 12px 0;
@@ -94,6 +90,12 @@
 .gallery__row--first .galerry__block:nth-child(5) > picture {
 	display: none;
 }
+.gallery__row--first .galerry__block:nth-child(6) > picture {
+	display: none;
+}
+.gallery__row--first .galerry__block:nth-child(7) > picture {
+	display: none;
+}
 
 .gallery__row--second .galerry__block:nth-child(1) > picture {
 	display: none;
@@ -108,6 +110,12 @@
 	display: none;
 }
 .gallery__row--second .galerry__block:nth-child(5) > picture {
+	display: none;
+}
+.gallery__row--second .galerry__block:nth-child(6) > picture {
+	display: none;
+}
+.gallery__row--second .galerry__block:nth-child(7) > picture {
 	display: none;
 }
 

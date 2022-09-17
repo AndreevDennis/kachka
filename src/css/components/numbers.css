@@ -3,7 +3,7 @@
 }
 
 .numbers__title {
-	font-family: "Roboto Flex", sans-serif;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 40px;
 	line-height: 46px;
 	text-align: right;
@@ -32,8 +32,7 @@
 }
 
 .numbers__number {
-	font-family: "Roboto Flex", sans-serif;
-	font-weight: 1000;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 100px;
 	line-height: 118px;
 	margin: 0;
@@ -41,7 +40,7 @@
 }
 
 .numbers__desc {
-	font-weight: 700;
+	font-family: "Mr-Amazin", sans-serif;
 	line-height: 20px;
 	margin: 0;
 	text-transform: uppercase;

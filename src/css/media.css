@@ -11,17 +11,20 @@
 
 @media screen and (min-width: 590px) {
 	/* MISSIONS */
-	.mission__container {
-		flex-direction: row;
-		justify-content: space-between;
+	.mission__title {
+		text-align: center;
 	}
 
 	.mission__text {
 		max-width: 370px;
+		margin: 0 auto 18px auto;
+		text-align: center;
 	}
 
 	.mission__text:last-of-type {
 		max-width: 420px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	/* FAQ */
@@ -110,6 +113,10 @@
 		z-index: -1;
 	}
 
+	.timer__drons {
+		width: 25%;
+	}
+
 	/* MISSIONS */
 	.mission {
 		padding-bottom: 93px;
@@ -118,16 +125,26 @@
 	.mission__container {
 		position: relative;
 		z-index: 1;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
-	.mission__img {
-		position: absolute;
-		/* top: -87px;
-		right: 0; */
-		top: -95px;
-		right: -5px;
-		z-index: -1;
-		width: 372px;
+	.mission__dec {
+		margin: 0;
+	}
+
+	.mission__title {
+		text-align: left;
+	}
+
+	.mission__text {
+		margin: 0 0 18px 0;
+		text-align: left;
+	}
+
+	.mission__text:last-of-type {
+		margin: 0;
+		text-align: left;
 	}
 
 	/* FAQ */
@@ -142,6 +159,10 @@
 
 	.faq__duck {
 		top: -90px;
+	}
+
+	.faq__text--last {
+		max-width: 540px;
 	}
 
 	/* GET */
@@ -161,7 +182,7 @@
 @media screen and (min-width: 880px) {
 	/* TIMER */
 	.timer__wrapper {
-		top: -400px;
+		top: -450px;
 		width: 35%;
 	}
 }
@@ -219,8 +240,7 @@
 		font-size: 32px;
 		line-height: 40px;
 		margin: 0 0 33px auto;
-		max-width: 560px;
-		font-family: "Montserrat", sans-serif;
+		max-width: 570px;
 	}
 
 	/* TIMER */
@@ -240,7 +260,7 @@
 
 	.timer__wrapper {
 		top: -550px;
-		width: 50%;
+		width: 30%;
 	}
 
 	/* NUMBERS */
@@ -255,7 +275,16 @@
 		line-height: 30px;
 	}
 
+	.numbers__desc {
+		font-size: 24px;
+		line-height: 26px;
+	}
+
 	/* MISSIONS */
+	.mission {
+		padding-bottom: 93px;
+	}
+
 	.mission__title {
 		font-size: 32px;
 		line-height: 37px;
@@ -271,12 +300,6 @@
 
 	.mission__text:last-of-type {
 		max-width: 610px;
-	}
-
-	.mission__img {
-		top: -110px;
-		right: -20px;
-		width: 463px;
 	}
 
 	/* GALLERY */
@@ -341,34 +364,6 @@
 		padding-bottom: 270px;
 	}
 
-	.roadmap__container {
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-	.roadmap__block::before {
-		filter: blur(145px);
-	}
-
-	.roadmap__img--second {
-		padding-top: 20px;
-	}
-
-	.roadmap__decs {
-		transform: rotate(0);
-		margin: 0;
-		gap: 25px;
-	}
-
-	.roadmap__dec--first {
-		transform: rotate(0);
-	}
-
-	.roadmap__dec--first {
-		margin: 0;
-	}
-
 	/* GET */
 	.get__title {
 		font-size: 32px;
@@ -413,6 +408,133 @@
 	.modal__dec {
 		width: 400px;
 	}
+
+	/* PRELOAD */
+	.preload__img {
+		width: 364px;
+		margin-bottom: 140px;
+	}
+
+	.preload__text {
+		font-size: 60px;
+		line-height: 66px;
+	}
+}
+
+@media screen and (min-width: 1142px) {
+	.roadmap__wrapper {
+		margin-bottom: 300px;
+	}
+
+	.roadmap__title {
+		font-size: 64px;
+		line-height: 64px;
+	}
+
+	.roadmap__arrow {
+		width: 653px;
+		height: 247px;
+		bottom: -200px;
+	}
+
+	.roadmap__container {
+		align-items: flex-start;
+	}
+
+	.roadmap__main {
+		width: 100%;
+		height: 2150px;
+	}
+
+	.roadmap__number {
+		width: 400px;
+		margin: 0;
+	}
+
+	.roadmap__block {
+		display: block;
+	}
+
+	.roadmap__stage--1,
+	.roadmap__stage--3 {
+		justify-self: start;
+	}
+
+	.roadmap__stage--2,
+	.roadmap__stage--4 {
+		justify-self: end;
+	}
+
+	.roadmap__stage--2 {
+		top: -175px;
+		right: 45px;
+	}
+
+	.roadmap__stage--3 {
+		top: -365px;
+		left: 40px;
+	}
+
+	.roadmap__stage--4 {
+		top: -610px;
+		right: 10px;
+	}
+
+	.roadmap__list {
+		position: absolute;
+		max-width: none;
+	}
+
+	.roadmap__item {
+		font-size: 27px;
+		line-height: 32px;
+	}
+
+	.roadmap__list--1 {
+		display: grid;
+		grid-template-columns: repeat(2, 290px);
+		gap: 10px;
+		padding: 0;
+		margin: 0;
+		right: 0;
+	}
+
+	.roadmap__list--1 li {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.roadmap__list--2 {
+		top: 1160px;
+		left: 600px;
+	}
+
+	.roadmap__list--3 {
+		top: 1650px;
+		left: 10px;
+		max-width: 586px;
+	}
+
+	.roadmap__subtitle {
+		position: absolute;
+	}
+
+	.roadmap__subtitle--1 {
+		font-size: 48px;
+		line-height: 47px;
+		text-align: left;
+		top: 650px;
+		max-width: 500px;
+	}
+
+	.roadmap__subtitle--2 {
+		top: 2155px;
+		left: 10px;
+		font-size: 64px;
+		line-height: 63px;
+		max-width: 460px;
+		text-align: left;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -438,16 +560,54 @@
 		top: -130px;
 	}
 
+	.faq__ammo {
+		display: block;
+	}
+
 	/* MODAL */
 	.modal__dec {
 		width: 450px;
 	}
 
 	/* MISSION */
-	.mission__img {
-		top: -175px;
-		right: -80px;
+	.mission__dec {
+		flex: 0 1 0;
+		max-width: none;
+	}
+
+	.mission__picture:last-of-type:before {
+		margin-top: 15px;
+	}
+
+	.mission__duck,
+	.mission__solder {
 		width: auto;
+	}
+
+	.mission__picture::before {
+		width: 191px;
+		height: 191px;
+	}
+
+	.mission__number {
+		font-size: 100px;
+		line-height: 95px;
+	}
+
+	.mission__subText {
+		font-size: 32px;
+		line-height: 43px;
+	}
+
+	/* ROADMAP */
+	.roadmap__list--1 {
+		display: grid;
+		grid-template-columns: repeat(2, 320px);
+	}
+
+	.roadmap__list--1 li {
+		font-size: 18px;
+		line-height: 20px;
 	}
 }
 
@@ -460,7 +620,6 @@
 
 	/* PREVIEW */
 	.preview__title {
-		font-size: 96px;
 		line-height: 102px;
 	}
 
@@ -481,13 +640,13 @@
 	}
 
 	.about__title {
-		font-size: 64px;
+		font-size: 60px;
 		line-height: 75px;
 		margin: 0;
 	}
 
 	.about__subtitle {
-		font-size: 32px;
+		font-size: 26px;
 		line-height: 38px;
 		margin: 0 0 32px 0;
 	}
@@ -517,9 +676,7 @@
 	}
 
 	.timer__wrapper {
-		/* width: 35%; */
-		left: -80px;
-		top: -700px;
+		width: 35%;
 	}
 
 	/* MISSION */
@@ -537,28 +694,6 @@
 	.roadmap {
 		margin-top: 300px;
 		padding-bottom: 470px;
-	}
-
-	.roadmap__container {
-		justify-content: space-between;
-	}
-
-	.roadmap__img {
-		width: auto;
-		height: auto;
-	}
-
-	.roadmap__img--second {
-		padding-top: 40px;
-	}
-
-	.roadmap__img--third {
-		margin-right: -60px;
-	}
-
-	.roadmap__name {
-		font-size: 32px;
-		line-height: 40px;
 	}
 
 	/* TEAM */
@@ -580,8 +715,7 @@
 
 	/* TIMER */
 	.timer__wrapper {
-		top: -780px;
-		left: 0;
+		top: -700px;
 	}
 
 	/* FAQ */

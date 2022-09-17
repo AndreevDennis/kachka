@@ -27,12 +27,6 @@
 
 		<meta name="theme-color" content="#000000" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900;8..144,1000&display=swap"
-			rel="stylesheet"
-		/>
 		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 
@@ -84,7 +78,9 @@
 				/>
 			</symbol>
 			<symbol id="instagram" viewBox="0 0 24 24" fill="#ffffff">
-				<path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/>
+				<path
+					d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"
+				/>
 			</symbol>
 			<symbol id="arrow1" viewBox="0 0 111 76">
 				<path
@@ -106,7 +102,14 @@
 			</symbol>
 		</svg>
 
-		<!-- <div aria-hidden="true" class="modal">
+		<div class="preload">
+			<div class="preload__container">
+				<img src="./img/preload.svg" alt="Bio weapon" class="preload__img" width="364" height="310" />
+				<p class="preload__text">Welcome to BioLab</p>
+			</div>
+		</div>
+
+		<div aria-hidden="true" class="modal">
 			<div class="container flex-1" role="dialog" aria-modal="true" aria-label="Modal window">
 				<div class="modal__container">
 					<div class="modal__wrapper">
@@ -119,11 +122,13 @@
 							<img src="" width="535" height="519" alt="War duck in ammunition and weapon" class="modal__img" />
 						</div>
 						<p class="modal__text">Go and get it to protect your NFT account</p>
-						<a href="https://opensea.io/KACH-" target="_blank" rel="noreferrer noopener" hidden class="btn modal__btn">See Whole Collection</a>
+						<a href="https://opensea.io/KACH-" target="_blank" rel="noreferrer noopener" hidden class="btn modal__btn"
+							>See Whole Collection</a
+						>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<nav class="mobile-nav" aria-hidden="true" aria-modal="true" aria-label="Mobile navigation" tabindex="-1">
 			<header class="header">
@@ -147,7 +152,7 @@
 					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#gallerySectionTitle">Gallery</a></li>
 					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#faqSectionTitle">Benefits</a></li>
 					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#roadmapSectionTitle">Roadmap</a></li>
-					<!-- <li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#getSectionTitle">Selection</a></li> -->
+					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#getSectionTitle">Selection</a></li>
 					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#teamSectionTitle">Team</a></li>
 				</ul>
 			</div>
@@ -156,11 +161,10 @@
 		<div class="preview">
 			<div class="preview__video" aria-hidden="true">
 				<video
-					class="preview__iframe"
+					class="preview__iframe preview__iframe--paused"
 					poster="./img/videos/preview.jpg"
 					loop
 					muted
-					autoplay
 					playsinline
 					width="1280"
 					height="720"
@@ -181,7 +185,7 @@
 									<li class="header__elem"><a class="header__link" href="#gallerySectionTitle">Gallery</a></li>
 									<li class="header__elem"><a class="header__link" href="#faqSectionTitle">Benefits</a></li>
 									<li class="header__elem"><a class="header__link" href="#roadmapSectionTitle">Roadmap</a></li>
-									<!-- <li class="header__elem"><a class="header__link" href="#getSectionTitle">Selection</a></li> -->
+									<li class="header__elem"><a class="header__link" href="#getSectionTitle">Selection</a></li>
 									<li class="header__elem"><a class="header__link" href="#teamSectionTitle">Team</a></li>
 								</ul>
 							</nav>
@@ -275,8 +279,14 @@
 					</div>
 					<div class="timer__wrapper">
 						<picture aria-hidden="true">
-							<source type="image/webp" srcset="./img/dec/nlaw.webp" />
-							<img src="./img/dec/nlaw.png" alt="" class="timer__img" loading="lazy" width="1131" height="1191" />
+							<source type="image/webp" srcset="./img/dec/duck-left.webp" />
+							<img src="./img/dec/duck-left.png" alt="" class="timer__img" loading="lazy" width="1131" height="1191" />
+						</picture>
+					</div>
+					<div class="timer__drons">
+						<picture aria-hidden="true">
+							<source type="image/webp" srcset="./img/dec/drons.webp" />
+							<img src="./img/dec/drons.png" alt="" class="timer__img" loading="lazy" width="466" height="347" />
 						</picture>
 					</div>
 				</section>
@@ -289,16 +299,16 @@
 						<div class="numbers__container">
 							<div class="numbers__wrapper">
 								<div class="numbers__block">
-									<p class="numbers__number">1110</p>
+									<p class="numbers__number">2402</p>
 									<p class="numbers__desc">NFT - DUCKS</p>
 								</div>
 								<div class="numbers__block">
-									<p class="numbers__number">10</p>
-									<p class="numbers__desc">Types of BIO WEAPON</p>
+									<p class="numbers__number">20</p>
+									<p class="numbers__desc">Battalions</p>
 								</div>
 								<div class="numbers__block">
-									<p class="numbers__number">1</p>
-									<p class="numbers__desc">Battalion</p>
+									<p class="numbers__number">22</p>
+									<p class="numbers__desc">Types of bio weapon</p>
 								</div>
 							</div>
 							<a href="https://opensea.io/KACH-" class="btn btn--opensea" target="_blank" rel="noreferrer noopener">
@@ -322,17 +332,41 @@
 							</p>
 							<p class="mission__text">We also will be constantly reporting our donations.</p>
 						</div>
-						<picture>
-							<source type="image/webp" srcset="./img/dec/aid.webp" />
-							<img
-								src="./img/dec/aid.png"
-								alt="War duck in ammunition and weapon"
-								class="mission__img"
-								loading="lazy"
-								width="531"
-								height="507"
-							/>
-						</picture>
+						<div class="mission__dec">
+							<picture class="mission__picture">
+								<source type="image/webp" srcset="./img/dec/duck-black.webp" />
+								<img
+									src="./img/dec/duck-black.png"
+									class="mission__duck"
+									alt=""
+									loading="lazy"
+									width="273"
+									height="217"
+								/>
+							</picture>
+							<picture class="mission__picture">
+								<img
+									src="./img/dec/solder.png"
+									class="mission__solder"
+									alt=""
+									loading="lazy"
+									width="259"
+									height="238"
+								/>
+							</picture>
+							<div class="mission__description">
+								<p class="mission__subText">
+									<span class="mission__number">1</span>
+									<span> KACHKA = </span>
+									<span class="mission__number">1</span>
+									<span style="display: flex; flex-direction: column">
+										<span>Warmed</span>
+										<span>Ukrainian</span>
+										<span>Defender</span>
+									</span>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -407,6 +441,32 @@
 									/>
 								</picture>
 							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
 						</div>
 						<div class="gallery__row gallery__row--first">
 							<div class="galerry__block">
@@ -453,6 +513,32 @@
 									<source type="image/webp" srcset="./img/gallery/4.webp" />
 									<img
 										src="./img/gallery/4.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
 										alt="War duck in ammunition and weapon"
 										class="gallery__img"
 										loading="lazy"
@@ -543,6 +629,32 @@
 									/>
 								</picture>
 							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/10.webp" />
+									<img
+										src="./img/gallery/10.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/10.webp" />
+									<img
+										src="./img/gallery/10.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
 						</div>
 						<div class="gallery__row gallery__row--second">
 							<div class="galerry__block">
@@ -589,6 +701,32 @@
 									<source type="image/webp" srcset="./img/gallery/9.webp" />
 									<img
 										src="./img/gallery/9.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/10.webp" />
+									<img
+										src="./img/gallery/10.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/10.webp" />
+									<img
+										src="./img/gallery/10.jpg"
 										alt="War duck in ammunition and weapon"
 										class="gallery__img"
 										loading="lazy"
@@ -679,6 +817,32 @@
 									/>
 								</picture>
 							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
 						</div>
 						<div class="gallery__row gallery__row--first">
 							<div class="galerry__block">
@@ -746,13 +910,45 @@
 									/>
 								</picture>
 							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
+							<div class="galerry__block">
+								<picture>
+									<source type="image/webp" srcset="./img/gallery/5.webp" />
+									<img
+										src="./img/gallery/5.jpg"
+										alt="War duck in ammunition and weapon"
+										class="gallery__img"
+										loading="lazy"
+										width="350"
+										height="350"
+									/>
+								</picture>
+							</div>
 						</div>
 					</div>
-					<a href="https://opensea.io/KACH-" target="_blank" rel="noreferrer noopener" class="btn btn--gallery gallery__btn">See Whole Collection</button>
+					<a
+						href="https://opensea.io/KACH-"
+						target="_blank"
+						rel="noreferrer noopener"
+						class="btn btn--gallery gallery__btn"
+						>See Whole Collection</a
+					>
 				</div>
 			</section>
 			<div class="main__container main__container--light">
-				<img aria-hidden="true" src="./img/dec/dec2.png" alt="" class="main__dec2" loading="lazy" />
+				<!-- <img aria-hidden="true" src="./img/dec/dec2.png" alt="" class="main__dec2" loading="lazy" /> -->
 				<section aria-labelledby="faqSectionTitle" class="faq">
 					<div class="container">
 						<h2 id="faqSectionTitle" class="faq__title">If you buy a DUCK …</h2>
@@ -766,92 +962,220 @@
 							<p class="faq__text">You will receive all the rights, which are mentioned in the token description</p>
 							<p class="faq__text">You will be the owner of the only BIO Weapon in Ukraine</p>
 						</div>
+						<p class="faq__text faq__text--last">
+							You will a get VIP access to <br />
+							<b style="margin-top: 10px">CRYPTO KACHKA GAME</b>
+						</p>
 					</div>
-					<!-- <div class="faq__duck" aria-hidden="true">
-						<picture>
-							<source type="image/webp" srcset="./img/dec/duck-right.webp" />
-							<img src="./img/dec/duck-right.png" alt="" class="faq__img" loading="lazy" width="602" height="1175" />
-						</picture>
-					</div> -->
 					<div class="faq__gun" aria-hidden="true">
 						<picture>
 							<source type="image/webp" srcset="./img/dec/gun-left.webp" />
 							<img src="./img/dec/gun-left.png" alt="" class="faq__img" loading="lazy" width="571" height="815" />
 						</picture>
 					</div>
+					<div class="faq__ammo" aria-hidden="true">
+						<picture>
+							<source type="image/webp" srcset="./img/dec/ammo.webp" />
+							<img src="./img/dec/ammo.png" alt="" class="faq__img" loading="lazy" width="471" height="494" />
+						</picture>
+					</div>
 				</section>
 				<section aria-labelledby="roadmapSectionTitle" class="roadmap">
 					<div class="container">
-						<h2 id="roadmapSectionTitle" class="roadmap__title">Roadmap</h2>
+						<div class="roadmap__wrapper">
+							<h2 id="roadmapSectionTitle" class="roadmap__title">Roadmap</h2>
+							<img
+								src="./img/roadmap/arrow.svg"
+								alt=""
+								class="roadmap__arrow"
+								aria-hidden="true"
+								width="251"
+								height="65"
+								loading="lazy"
+							/>
+						</div>
 						<div class="roadmap__container">
-							<div class="roadmap__block">
-								<picture aria-hidden="true">
-									<source type="image/webp" srcset="./img/roadmap/hero.webp" />
+							<div class="roadmap__main">
+								<div class="roadmap__stage roadmap__stage--1" aria-hidden="true">
 									<img
-										class="roadmap__img roadmap__img--first"
-										src="./img/roadmap/hero.png"
-										alt="Hero-DUCK"
-										width="309"
-										height="304"
+										src="./img/roadmap/stage1.png"
+										alt=""
+										class="roadmap__number"
 										loading="lazy"
+										width="400"
+										height="auto"
 									/>
-								</picture>
-								<p class="roadmap__name">Hero-DUCK</p>
-							</div>
-							<div class="roadmap__dec roadmap__dec--first" focusable="false" aria-hidden="true">
-								<svg width="111" height="76">
-									<use xlink:href="#arrow1" />
-								</svg>
-							</div>
-							<div class="roadmap__block">
-								<picture aria-hidden="true">
-									<source type="image/webp" srcset="./img/roadmap/enemy.webp" />
 									<img
-										class="roadmap__img roadmap__img--second"
-										src="./img/roadmap/enemy.png"
-										alt="Enemy"
-										width="255"
-										height="268"
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--1"
 										loading="lazy"
+										width="400"
+										height="auto"
 									/>
-								</picture>
-								<p class="roadmap__name">Enemy - ORD</p>
-							</div>
-							<div class="roadmap__decs">
-								<div class="roadmap__dec" focusable="false" aria-hidden="true">
-									<svg width="109" height="54">
-										<use xlink:href="#arrow2" />
-									</svg>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--2"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--3"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
 								</div>
-								<div class="roadmap__dec" focusable="false" aria-hidden="true">
-									<svg width="119" height="55">
-										<use xlink:href="#arrow3" />
-									</svg>
-								</div>
-							</div>
-							<div class="roadmap__block">
-								<picture aria-hidden="true">
-									<source type="image/webp" srcset="./img/roadmap/battle.webp" />
+								<ul class="roadmap__list roadmap__list--1">
+									<div>
+										<li class="roadmap__item roadmap__item--check">
+											Gathering a team, developing the first prototype of BIO Weapon
+										</li>
+										<li class="roadmap__item roadmap__item--check">Formation of a battalion of 1110 KACHKAs</li>
+										<li class="roadmap__item roadmap__item--check">
+											Launch of social networks and website of BIO laboratories
+										</li>
+									</div>
+									<div>
+										<li class="roadmap__item">Creation of a smart contract for mint</li>
+										<li class="roadmap__item">Launch of an advertising campaign among influencers</li>
+										<li class="roadmap__item">Airdrop</li>
+										<li class="roadmap__item">Whitelist</li>
+									</div>
+								</ul>
+								<div class="roadmap__stage roadmap__stage--2" aria-hidden="true">
 									<img
-										class="roadmap__img roadmap__img--third"
-										src="./img/roadmap/battle.png"
-										alt="Grenade and explosion"
-										width="360"
-										height="335"
+										src="./img/roadmap/stage2.png"
+										alt=""
+										class="roadmap__number"
 										loading="lazy"
+										width="400"
+										height="auto"
 									/>
-								</picture>
-								<p class="roadmap__name">BATTLE</p>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--4"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--5"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--6"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+								</div>
+								<h3 class="roadmap__subtitle roadmap__subtitle--1">start of the hunting season</h3>
+								<div class="roadmap__stage roadmap__stage--3" aria-hidden="true">
+									<img
+										src="./img/roadmap/stage3.png"
+										alt=""
+										class="roadmap__number"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--7"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--8"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--9"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+								</div>
+								<ul class="roadmap__list roadmap__list--2">
+									<li class="roadmap__item">Rewards for NFT holders</li>
+									<li class="roadmap__item">Release of “fuel” for <span class="roadmap__accesnt">KACHKA</span></li>
+									<li class="roadmap__item"><span class="roadmap__accesnt">$KACH</span> token IDO</li>
+								</ul>
+								<div class="roadmap__stage roadmap__stage--4" aria-hidden="true">
+									<img
+										src="./img/roadmap/stage4.png"
+										alt=""
+										class="roadmap__number"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--10"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--11"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+									<img
+										src="./img/roadmap/block.svg"
+										alt=""
+										class="roadmap__block roadmap__block--12"
+										loading="lazy"
+										width="400"
+										height="auto"
+									/>
+								</div>
+								<ul class="roadmap__list roadmap__list--3">
+									<li class="roadmap__item">Listing <span class="roadmap__accesnt">$KACH</span> на exchanges</li>
+									<li class="roadmap__item">
+										Early access to beta version for <span class="roadmap__accesnt">KACHKA</span> holders
+									</li>
+									<li class="roadmap__item">
+										Opening full access to the <span class="roadmap__accesnt">Bio Game</span> for all users
+									</li>
+								</ul>
+								<h3 class="roadmap__subtitle roadmap__subtitle--2">
+									<span class="roadmap__accesnt">to be continued...</span>
+								</h3>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
-			<!-- <section class="get" aria-labelledby="getSectionTitle">
+			<section class="get" aria-labelledby="getSectionTitle">
 				<div class="container">
 					<h2 id="getSectionTitle" class="get__title">
 						Get your Kach<span class="get__title--red">Ka</span> and go HUNTING <br />
-						You can purchase it at the <span class="get__title--blue">OpenSea</span>
 					</h2>
 					<button class="btn" type="button" id="getDuck">Click to choose</button>
 				</div>
@@ -930,7 +1254,7 @@
 					</div>
 				</div>
 				<div class="get__dec"></div>
-			</section> -->
+			</section>
 			<section class="team" aria-labelledby="teamSectionTitle">
 				<div class="container">
 					<h2 id="teamSectionTitle" class="team__title">Team</h2>
@@ -1022,13 +1346,7 @@
 									<use xlink:href="#twitter" />
 								</svg>
 							</a>
-							<a
-								class="footer__social"
-								href="#"
-								aria-label="Discord"
-								target="_blank"
-								rel="noreferrer noopener"
-							>
+							<a class="footer__social" href="#" aria-label="Discord" target="_blank" rel="noreferrer noopener">
 								<svg width="21" height="24" focusable="false" aria-hidden="true">
 									<use xlink:href="#discord" />
 								</svg>
@@ -1072,7 +1390,7 @@
 								<li class="footer__elem"><a class="footer__link" href="#gallerySectionTitle">Gallery</a></li>
 								<li class="footer__elem"><a class="footer__link" href="#faqSectionTitle">Benefits</a></li>
 								<li class="footer__elem"><a class="footer__link" href="#roadmapSectionTitle">Roadmap</a></li>
-								<!-- <li class="footer__elem"><a class="footer__link" href="#getSectionTitle">Selection</a></li> -->
+								<li class="footer__elem"><a class="footer__link" href="#getSectionTitle">Selection</a></li>
 								<li class="footer__elem"><a class="footer__link" href="#teamSectionTitle">Team</a></li>
 							</ul>
 						</nav>

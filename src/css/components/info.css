@@ -3,10 +3,9 @@
 }
 
 .info__title {
-	font-family: "Roboto Flex", sans-serif;
+	font-family: "Mr-Amazin", sans-serif;
 	font-size: 40px;
 	line-height: 46px;
-	font-weight: 900;
 	margin: 0 0 20px 0;
 	color: var(--accent-color);
 }

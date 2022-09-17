@@ -2,10 +2,12 @@
 	max-width: 1142px;
 	margin: 0 auto;
 	padding: 0 16px;
+	width: 100%;
 }
 
 .full-container {
 	max-width: 1952px;
 	margin: 0 auto;
 	padding: 0 16px;
+	width: 100%;
 }

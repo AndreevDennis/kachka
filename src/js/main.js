@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+	const bgVideo = document.querySelector(".preview__iframe");
+
+	// PRELOAD
+	const preloadDiv = document.querySelector(".preload");
+
+	setTimeout(() => {
+		preloadDiv.classList.add("preload--hidden");
+		bgVideo.classList.remove("preview__iframe--paused");
+		bgVideo.play();
+	}, 4500);
+
 	// VIDEOS
 	const userAgentString = navigator.userAgent;
 	let chromeAgent = userAgentString.indexOf("Chrome") > -1;
@@ -15,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const eggVideo = document.querySelector(".about__egg");
 	const eggImg = document.querySelector(".about__egg--img");
-	const bgVideo = document.querySelector(".preview__iframe");
 	const playVideoBtn = document.querySelector("#playVideo");
 
 	playVideoBtn.addEventListener("click", () => {
-		bgVideo.play();
+		// bgVideo.play();
 		playVideoBtn.classList.add("preview__play--hiden");
 		playVideoBtn.disabled = true;
 	});
@@ -43,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// TIMER
 	const timerContainer = document.querySelector(".timer__time");
 
-	const finalDate = new Date("August 15, 2022 00:01:00");
+	const finalDate = new Date("October 14, 2022 00:01:00");
 
 	function updateCounter() {
 		const currentTime = new Date();
@@ -164,96 +174,140 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	// OBSERVERS
+	const roadmapOptions = {
+		root: null,
+		rootMargin: "0px",
+		treshold: 0.3,
+	};
+
+	const roadmapCallback = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("roadmap__visible");
+				observer.unobserve(entry.target);
+			}
+		});
+	};
+
+	const roadmapObserver = new IntersectionObserver(roadmapCallback, roadmapOptions);
+
+	const roadmapElements = document.querySelectorAll(
+		".roadmap__block, .roadmap__number, .roadmap__list, .roadmap__subtitle"
+	);
+	roadmapElements.forEach((el) => roadmapObserver.observe(el));
+
+	const videoOptions = {
+		root: null,
+		rootMargin: "0px",
+		treshold: 0.1,
+	};
+
+	const videoCallback = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting && !entry.target.classList.contains("preview__iframe--paused")) {
+				entry.target.play();
+			} else {
+				entry.target.pause();
+			}
+		});
+	};
+
+	let videoObserver = new IntersectionObserver(videoCallback, videoOptions);
+
+	const video = document.querySelector(".preview__iframe");
+	videoObserver.observe(video);
+
 	// MODAL & ROLL
-	// const modal = document.querySelector(".modal");
-	// const closeButton = document.querySelector(".modal__close");
-	// const confirmButton = document.querySelector(".modal__btn");
-	// const openModalBtn = document.querySelector("#getDuck");
-	// const getRows = document.querySelectorAll(".get__row");
-	// const modalImg = document.querySelector(".modal__img");
+	const modal = document.querySelector(".modal");
+	const closeButton = document.querySelector(".modal__close");
+	const confirmButton = document.querySelector(".modal__btn");
+	const openModalBtn = document.querySelector("#getDuck");
+	const getRows = document.querySelectorAll(".get__row");
+	const modalImg = document.querySelector(".modal__img");
 
-	// setTimeout(() => {
-	// 	modal.style.display = "flex";
-	// }, 20);
+	setTimeout(() => {
+		modal.style.display = "flex";
+	}, 20);
 
-	// const getRowsAnimationDuration = 3500;
+	const getRowsAnimationDuration = 3500;
 
-	// function getRandomInt(min, max) {
-	// 	min = Math.ceil(min);
-	// 	max = Math.floor(max);
-	// 	return Math.floor(Math.random() * (max - min + 1)) + min;
-	// }
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
 
-	// let focusables = [];
-	// focusables = Array.from(modal.querySelectorAll("button"));
+	let focusables = [];
+	focusables = Array.from(modal.querySelectorAll("button"));
 
-	// const handleModalKeyboard = onTab(modal, focusables);
+	const handleModalKeyboard = onTab(modal, focusables);
 
-	// openModalBtn.addEventListener("click", () => {
-	// 	openModalBtn.disabled = true;
+	openModalBtn.addEventListener("click", () => {
+		openModalBtn.disabled = true;
 
-	// 	for (const row of getRows) {
-	// 		row.classList.remove("get__row--paused");
-	// 		row.classList.add("get__row--runnig");
-	// 	}
+		for (const row of getRows) {
+			row.classList.remove("get__row--paused");
+			row.classList.add("get__row--runnig");
+		}
 
-	// 	const randomNumber = getRandomInt(1, 41);
-	// 	modalImg.src = `./img/all-ducks/${randomNumber}.png`;
+		const randomNumber = getRandomInt(1, 41);
+		modalImg.src = `./img/all-ducks/${randomNumber}.png`;
 
-	// 	setTimeout(() => {
-	// 		for (const row of getRows) {
-	// 			row.classList.add("get__row--paused");
-	// 		}
+		setTimeout(() => {
+			for (const row of getRows) {
+				row.classList.add("get__row--paused");
+			}
 
-	// 		for (let i = 0; i < focusables.length; i++) {
-	// 			focusables[i].hidden = false;
-	// 		}
+			for (let i = 0; i < focusables.length; i++) {
+				focusables[i].hidden = false;
+			}
 
-	// 		modal.setAttribute("aria-hidden", false);
-	// 		modal.classList.add("modal--visible");
-	// 		closeButton.focus();
-	// 		document.body.classList.remove("body__overflow--visible");
-	// 		document.body.classList.add("body__overflow--hidden");
-	// 		document.addEventListener("keydown", handleModalKeyboard);
-	// 	}, getRowsAnimationDuration);
-	// });
+			modal.setAttribute("aria-hidden", false);
+			modal.classList.add("modal--visible");
+			closeButton.focus();
+			document.body.classList.remove("body__overflow--visible");
+			document.body.classList.add("body__overflow--hidden");
+			document.addEventListener("keydown", handleModalKeyboard);
+		}, getRowsAnimationDuration);
+	});
 
 	/* Close modal on close */
-	// closeButton.addEventListener("click", () => {
-	// 	openModalBtn.disabled = false;
+	closeButton.addEventListener("click", () => {
+		openModalBtn.disabled = false;
 
-	// 	for (const row of getRows) {
-	// 		row.classList.remove("get__row--runnig");
-	// 	}
+		for (const row of getRows) {
+			row.classList.remove("get__row--runnig");
+		}
 
-	// 	for (let i = 0; i < focusables.length; i++) {
-	// 		focusables[i].hidden = true;
-	// 	}
+		for (let i = 0; i < focusables.length; i++) {
+			focusables[i].hidden = true;
+		}
 
-	// 	modal.setAttribute("aria-hidden", true);
-	// 	modal.classList.remove("modal--visible");
-	// 	document.body.classList.remove("body__overflow--hidden");
-	// 	document.body.classList.add("body__overflow--visible");
-	// 	document.removeEventListener("keydown", handleModalKeyboard);
-	// 	openModalBtn.focus();
-	// });
+		modal.setAttribute("aria-hidden", true);
+		modal.classList.remove("modal--visible");
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
+		document.removeEventListener("keydown", handleModalKeyboard);
+		openModalBtn.focus();
+	});
 
 	/* Close modal on confirm */
-	// confirmButton.addEventListener("click", () => {
-	// 	openModalBtn.disabled = false;
+	confirmButton.addEventListener("click", () => {
+		openModalBtn.disabled = false;
 
-	// 	for (const row of getRows) {
-	// 		row.classList.remove("get__row--runnig");
-	// 	}
+		for (const row of getRows) {
+			row.classList.remove("get__row--runnig");
+		}
 
-	// 	for (let i = 0; i < focusables.length; i++) {
-	// 		focusables[i].hidden = true;
-	// 	}
+		for (let i = 0; i < focusables.length; i++) {
+			focusables[i].hidden = true;
+		}
 
-	// 	modal.setAttribute("aria-hidden", true);
-	// 	modal.classList.remove("modal--visible");
-	// 	document.body.classList.remove("body__overflow--hidden");
-	// 	document.body.classList.add("body__overflow--visible");
-	// 	document.removeEventListener("keydown", handleModalKeyboard);
-	// });
+		modal.setAttribute("aria-hidden", true);
+		modal.classList.remove("modal--visible");
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
+		document.removeEventListener("keydown", handleModalKeyboard);
+	});
 });

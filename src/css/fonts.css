@@ -57,3 +57,13 @@
 	src: local(""), url("../fonts/Montserrat/montserrat-v25-latin-900.woff2") format("woff2"),
 		url("../fonts/Montserrat/montserrat-v25-latin-900.woff") format("woff");
 }
+
+/* mr-amazin-400 - latin */
+@font-face {
+	font-family: "Mr-Amazin";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(""), url("../fonts/MrAmazin/Mr-Amazin-Regular-Type.woff2") format("woff2"),
+		url("../fonts/MrAmazin/Mr-Amazin-Regular-Type.woff") format("woff");
+}
