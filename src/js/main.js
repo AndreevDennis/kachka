@@ -164,6 +164,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	const options = {
+		root: null,
+		rootMargin: "0px",
+		treshold: 0.3,
+	};
+
+	const callback = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("roadmap__visible");
+				observer.unobserve(entry.target);
+			}
+		});
+	};
+
+	let observer = new IntersectionObserver(callback, options);
+
+	const roadmapElements = document.querySelectorAll(".roadmap__block, .roadmap__number");
+	roadmapElements.forEach((el) => observer.observe(el));
+
 	// MODAL & ROLL
 	const modal = document.querySelector(".modal");
 	const closeButton = document.querySelector(".modal__close");
