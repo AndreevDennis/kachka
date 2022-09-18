@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	if (window.pageYOffset > 10) {
+	if (window.pageYOffset > 10 && !window.location.hash) {
 		window.scrollTo(0, 0);
 	}
 
