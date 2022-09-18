@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+	if (window.pageYOffset > 10) {
+		window.scrollTo(0, 0);
+	}
+
 	const bgVideo = document.querySelector(".preview__iframe");
 
 	// PRELOAD
