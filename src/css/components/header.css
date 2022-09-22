@@ -53,3 +53,22 @@
 .header__link:hover {
 	color: var(--accent-color);
 }
+
+.header__select {
+	background-color: transparent;
+	border: 2px solid var(--accent-color);
+	border-radius: 7px;
+	padding: 6px 10px;
+	font-family: "Mr-Amazin", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--text-color);
+	cursor: pointer;
+	width: 80px;
+	margin-right: 20px;
+}
+
+.header__option {
+	background-color: var(--mobile-nav-bg);
+	color: var(--text-color);
+}

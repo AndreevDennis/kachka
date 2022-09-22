@@ -114,7 +114,7 @@
 
 .roadmap__block--10 {
 	transform: rotateY(180deg);
-	margin-top: -120px;
+	margin-top: -130px;
 	margin-left: -155px;
 }
 
@@ -167,7 +167,7 @@
 }
 
 .roadmap__subtitle:last-of-type {
-	margin-top: 40px;
+	margin-top: 80px;
 }
 
 .roadmap__visible {

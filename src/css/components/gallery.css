@@ -10,14 +10,8 @@
 	font-size: 40px;
 	line-height: 47px;
 	text-align: center;
-	margin: 0 0 12px 0;
-	color: var(--accent-color);
-}
-
-.gallery__text {
-	line-height: 20px;
-	text-align: center;
 	margin: 0 0 36px 0;
+	color: var(--accent-color);
 }
 
 .galerry__block {
