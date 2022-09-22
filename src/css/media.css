@@ -107,7 +107,7 @@
 	/* TIMER */
 	.timer__wrapper {
 		position: absolute;
-		top: -180px;
+		top: -345px;
 		left: 0;
 		width: 33%;
 		z-index: -1;
@@ -115,6 +115,7 @@
 
 	.timer__drons {
 		width: 25%;
+		top: 110%;
 	}
 
 	/* MISSIONS */
@@ -306,11 +307,6 @@
 	.gallery__title {
 		font-size: 48px;
 		line-height: 56px;
-	}
-
-	.gallery__text {
-		font-size: 32px;
-		line-height: 40px;
 		margin: 0 0 72px 0;
 	}
 
@@ -451,6 +447,20 @@
 		margin: 0;
 	}
 
+	.roadmap__number.ua-1 {
+		margin-left: 40px;
+		margin-bottom: 10px;
+	}
+
+	.roadmap__number.ua-4 {
+		margin-right: -15px;
+		margin-top: 25px;
+	}
+
+	.roadmap__number.ua-4 + .roadmap__block--10 {
+		margin-top: -150px;
+	}
+
 	.roadmap__block {
 		display: block;
 	}
@@ -493,7 +503,7 @@
 	.roadmap__list--1 {
 		display: grid;
 		grid-template-columns: repeat(2, 290px);
-		gap: 10px;
+		gap: 20px;
 		padding: 0;
 		margin: 0;
 		right: 0;
@@ -626,7 +636,7 @@
 	.preview__text {
 		font-size: 36px;
 		line-height: 44px;
-		max-width: 560px;
+		max-width: 720px;
 	}
 
 	.preview__info {

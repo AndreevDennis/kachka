@@ -128,8 +128,8 @@
 						<button type="button" hidden class="modal__close" aria-label="Close modal">
 							<img aria-hidden="true" src="./img/modal/modal-close.png" alt="" />
 						</button>
-						<h2 class="modal__title">Congratulations!</h2>
-						<p class="modal__text">This Kach<span class="modal__accesn">KA</span> chose you!</p>
+						<h2 class="modal__title lng-modalTitle">Congratulations!</h2>
+						<p class="modal__text lng-modalText1">This Kach<span class="modal__accesn">KA</span> chose you!</p>
 						<div class="modal__dec">
 							<img src="" width="535" height="519" alt="War duck in ammunition and weapon" class="modal__img" />
 						</div>
@@ -159,13 +159,25 @@
 			</header>
 			<div class="container">
 				<ul id="menu" class="mobile-nav__menu">
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#aboutSectionTitle">Concept</a></li>
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#missionSectionTitle">Mission</a></li>
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#gallerySectionTitle">Gallery</a></li>
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#faqSectionTitle">Benefits</a></li>
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#roadmapSectionTitle">Roadmap</a></li>
-					<!-- <li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#getSectionTitle">Selection</a></li> -->
-					<li class="mobile-nav__elem"><a hidden class="mobile-nav__link" href="#teamSectionTitle">Team</a></li>
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerConcept" href="#aboutSectionTitle">Concept</a>
+					</li>
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerMission" href="#missionSectionTitle">Mission</a>
+					</li>
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerGallery" href="#gallerySectionTitle">Gallery</a>
+					</li>
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerBenefits" href="#faqSectionTitle">Benefits</a>
+					</li>
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerRoadmap" href="#roadmapSectionTitle">Roadmap</a>
+					</li>
+					<!-- <li class="mobile-nav__elem"><a hidden class="mobile-nav__link lng-headerSelection" href="#getSectionTitle">Selection</a></li> -->
+					<li class="mobile-nav__elem">
+						<a hidden class="mobile-nav__link lng-headerTeam" href="#teamSectionTitle">Team</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -192,20 +204,36 @@
 							<img src="./img/logo.svg" alt="KACHKA" width="160" height="65" />
 							<nav class="header__nav">
 								<ul class="header__menu">
-									<li class="header__elem"><a class="header__link" href="#aboutSectionTitle">Concept</a></li>
-									<li class="header__elem"><a class="header__link" href="#missionSectionTitle">Mission</a></li>
-									<li class="header__elem"><a class="header__link" href="#gallerySectionTitle">Gallery</a></li>
-									<li class="header__elem"><a class="header__link" href="#faqSectionTitle">Benefits</a></li>
-									<li class="header__elem"><a class="header__link" href="#roadmapSectionTitle">Roadmap</a></li>
-									<!-- <li class="header__elem"><a class="header__link" href="#getSectionTitle">Selection</a></li> -->
-									<li class="header__elem"><a class="header__link" href="#teamSectionTitle">Team</a></li>
+									<li class="header__elem">
+										<a class="header__link lng-headerConcept" href="#aboutSectionTitle">Concept</a>
+									</li>
+									<li class="header__elem">
+										<a class="header__link lng-headerMission" href="#missionSectionTitle">Mission</a>
+									</li>
+									<li class="header__elem">
+										<a class="header__link lng-headerGallery" href="#gallerySectionTitle">Gallery</a>
+									</li>
+									<li class="header__elem">
+										<a class="header__link lng-headerBenefit" href="#faqSectionTitle">Benefits</a>
+									</li>
+									<li class="header__elem">
+										<a class="header__link lng-headerRoadmap" href="#roadmapSectionTitle">Roadmap</a>
+									</li>
+									<!-- <li class="header__elem"><a class="header__link lng-headerSelection" href="#getSectionTitle">Selection</a></li> -->
+									<li class="header__elem"><a class="header__link lng-headerTeam" href="#teamSectionTitle">Team</a></li>
 								</ul>
 							</nav>
-							<button id="openHeader" class="header__btn" aria-label="Open navigation">
-								<svg focusable="false" aria-hidden="true" width="21" height="13">
-									<use xlink:href="#burger" />
-								</svg>
-							</button>
+							<div>
+								<select name="language" id="language" class="header__select">
+									<option class="header__option" value="en">ENG</option>
+									<option class="header__option" value="ua">UA</option>
+								</select>
+								<button id="openHeader" class="header__btn" aria-label="Open navigation">
+									<svg focusable="false" aria-hidden="true" width="21" height="13">
+										<use xlink:href="#burger" />
+									</svg>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -213,11 +241,11 @@
 			<div class="container flex-1">
 				<div class="preview__container">
 					<div class="preview__wrapper">
-						<h1 class="preview__title">
+						<h1 class="preview__title lng-previewTitle">
 							Battle ducks — <br />
 							your NFT protection
 						</h1>
-						<p class="preview__text">100% Created and approved by Ukrainian national "biolabs"</p>
+						<p class="preview__text lng-previewText">100% Created and approved by Ukrainian national "biolabs"</p>
 					</div>
 					<button id="playVideo" class="preview__play" aria-label="Open video">
 						<svg focusable="false" aria-hidden="true" width="65" height="65">
@@ -225,7 +253,7 @@
 						</svg>
 					</button>
 					<div class="preview__wrapper">
-						<p class="preview__info">
+						<p class="preview__info lng-previewInfo">
 							Be invincible like Ukrainians. <br />
 							Buy a unique NFT-duck from the biolab and support the Ukrainian army.
 						</p>
@@ -247,13 +275,13 @@
 					<div class="container">
 						<div class="about__container">
 							<div class="about__info">
-								<h2 id="aboutSectionTitle" class="about__title">Battle ducks</h2>
-								<h3 class="about__subtitle">Ukrainian NFT Biological weapons</h3>
-								<p class="about__text">
+								<h2 id="aboutSectionTitle" class="about__title lng-aboutTitle">Battle ducks</h2>
+								<h3 class="about__subtitle lng-aboutSubtitle">Ukrainian NFT Biological weapons</h3>
+								<p class="about__text lng-aboutText1">
 									The Kach.NFT team of like-minded people has developed a patriotic collection of "biological weapons"
 									that protects Ukrainian borders.
 								</p>
-								<p class="about__text">
+								<p class="about__text lng-aboutText2">
 									<strong>«Battle ducks»</strong>is an irony over Russian propaganda, Ukrainian biological weapons for
 									eliminating the enemies of Ukraine.
 								</p>
@@ -277,8 +305,10 @@
 				</section>
 				<section aria-labelledby="infoSectionTitle" class="info">
 					<div class="container">
-						<h2 id="infoSectionTitle" class="info__title">This is 1110 NFT-ducks with unique weapons and plumage.</h2>
-						<p class="info__text">
+						<h2 id="infoSectionTitle" class="info__title lng-infoTitle">
+							This is 1110 NFT-ducks with unique weapons and plumage.
+						</h2>
+						<p class="info__text lng-infoText">
 							We want to fulfill every duck’s destiny - <b>destroy our enemies.</b> <br />
 							The battle duck is one of the symbols Ukrainian people’s strength and will.
 						</p>
@@ -286,7 +316,7 @@
 				</section>
 				<section aria-labelledby="timerSectionTitle" class="timer">
 					<div class="container">
-						<h2 id="timerSectionTitle" class="timer__title">Hunting season ends in</h2>
+						<h2 id="timerSectionTitle" class="timer__title lng-timerTitle">Hunting season ends in</h2>
 						<time class="timer__time"></time>
 					</div>
 					<div class="timer__wrapper">
@@ -304,23 +334,23 @@
 				</section>
 				<section aria-labelledby="numbersSectionTitle" class="numbers">
 					<div class="container">
-						<h2 id="numbersSectionTitle" class="numbers__title">
+						<h2 id="numbersSectionTitle" class="numbers__title lng-numbersTitle">
 							Do you want to help people of Ukraine defeat the horde?
 						</h2>
-						<p class="numbers__text">Help Ukrainian army - buy ducks.</p>
+						<p class="numbers__text lng-numbersText">Help Ukrainian army - buy ducks.</p>
 						<div class="numbers__container">
 							<div class="numbers__wrapper">
 								<div class="numbers__block">
 									<p class="numbers__number">2402</p>
-									<p class="numbers__desc">NFT - DUCKS</p>
+									<p class="numbers__desc lng-numbersDesc1">NFT - DUCKS</p>
 								</div>
 								<div class="numbers__block">
 									<p class="numbers__number">20</p>
-									<p class="numbers__desc">Battalions</p>
+									<p class="numbers__desc lng-numbersDesc2">Battalions</p>
 								</div>
 								<div class="numbers__block">
 									<p class="numbers__number">22</p>
-									<p class="numbers__desc">Types of bio weapon</p>
+									<p class="numbers__desc lng-numbersDesc3">Types of bio weapon</p>
 								</div>
 							</div>
 							<a href="https://opensea.io/KACH-" class="btn btn--opensea" target="_blank" rel="noreferrer noopener">
@@ -337,12 +367,12 @@
 				<div class="container">
 					<div class="mission__container">
 						<div class="mission__info">
-							<h2 id="missionSectionTitle" class="mission__title">Mission</h2>
-							<p class="mission__text">
-								​Money received from the sale of NFTs will be directed to help the Ukrainian army and civilians in
-								harm's way.
+							<h2 id="missionSectionTitle" class="mission__title lng-missionTitle">Mission</h2>
+							<p class="mission__text lng-missionText1">
+								Money received from the sale of NFTs will be directed to help the Ukrainian army and civilians in harm's
+								way.
 							</p>
-							<p class="mission__text">We also will be constantly reporting our donations.</p>
+							<p class="mission__text lng-missionText2">We also will be constantly reporting our donations.</p>
 						</div>
 						<div class="mission__dec">
 							<picture class="mission__picture">
@@ -371,10 +401,10 @@
 									<span class="mission__number">1</span>
 									<span> KACHKA = </span>
 									<span class="mission__number">1</span>
-									<span style="display: flex; flex-direction: column">
-										<span>Warmed</span>
-										<span>Ukrainian</span>
-										<span>Defender</span>
+									<span style="display: flex; flex-direction: column; align-items: flex-start">
+										<span class="lng-missionSpan1">Warmed</span>
+										<span class="lng-missionSpan2">Ukrainian</span>
+										<span class="lng-missionSpan3">Defender</span>
 									</span>
 								</p>
 							</div>
@@ -384,8 +414,7 @@
 			</section>
 			<section aria-labelledby="gallerySectionTitle" class="gallery">
 				<div class="full-container">
-					<h2 id="gallerySectionTitle" class="gallery__title">Gallery</h2>
-					<p class="gallery__text">​Expirience our collection in Gallery section</p>
+					<h2 id="gallerySectionTitle" class="gallery__title lng-galleryTitle">Gallery</h2>
 					<div class="gallery__autoscroll">
 						<div class="gallery__row gallery__row--first">
 							<div class="galerry__block">
@@ -963,18 +992,20 @@
 				<!-- <img aria-hidden="true" src="./img/dec/dec2.png" alt="" class="main__dec2" loading="lazy" /> -->
 				<section aria-labelledby="faqSectionTitle" class="faq">
 					<div class="container">
-						<h2 id="faqSectionTitle" class="faq__title">If you buy a DUCK …</h2>
+						<h2 id="faqSectionTitle" class="faq__title lng-faqTitle">If you buy a DUCK …</h2>
 						<div class="faq__container">
-							<p class="faq__text">
+							<p class="faq__text lng-faqText1">
 								You are becoming a member of the unique community with different giveaways and contests
 							</p>
-							<p class="faq__text">Your personal message will be written on the real missile</p>
-							<p class="faq__text">You will be added to the WhiteList for the future collections</p>
-							<p class="faq__text">You will support Ukraine</p>
-							<p class="faq__text">You will receive all the rights, which are mentioned in the token description</p>
-							<p class="faq__text">You will be the owner of the only BIO Weapon in Ukraine</p>
+							<p class="faq__text lng-faqText2">Your personal message will be written on the real missile</p>
+							<p class="faq__text lng-faqText3">You will be added to the WhiteList for the future collections</p>
+							<p class="faq__text lng-faqText4">You will support Ukraine</p>
+							<p class="faq__text lng-faqText5">
+								You will receive all the rights, which are mentioned in the token description
+							</p>
+							<p class="faq__text lng-faqText6">You will be the owner of the only BIO Weapon in Ukraine</p>
 						</div>
-						<p class="faq__text faq__text--last">
+						<p class="faq__text faq__text--last lng-faqText7">
 							You will a get VIP access to <br />
 							<b style="margin-top: 10px">CRYPTO KACHKA GAME</b>
 						</p>
@@ -1044,19 +1075,21 @@
 								</div>
 								<ul class="roadmap__list roadmap__list--1">
 									<div>
-										<li class="roadmap__item roadmap__item--check">
+										<li class="roadmap__item roadmap__item--check lng-roadmapItem1">
 											Gathering a team, developing the first prototype of BIO Weapon
 										</li>
-										<li class="roadmap__item roadmap__item--check">Formation of a battalion of 1110 KACHKAs</li>
-										<li class="roadmap__item roadmap__item--check">
+										<li class="roadmap__item roadmap__item--check lng-roadmapItem2">
+											Formation of a battalion of 1110 KACHKAs
+										</li>
+										<li class="roadmap__item roadmap__item--check lng-roadmapItem3">
 											Launch of social networks and website of BIO laboratories
 										</li>
 									</div>
 									<div>
-										<li class="roadmap__item">Creation of a smart contract for mint</li>
-										<li class="roadmap__item">Launch of an advertising campaign among influencers</li>
-										<li class="roadmap__item">Airdrop</li>
-										<li class="roadmap__item">Whitelist</li>
+										<li class="roadmap__item lng-roadmapItem4">Creation of a smart contract for mint</li>
+										<li class="roadmap__item lng-roadmapItem5">Launch of an advertising campaign among influencers</li>
+										<li class="roadmap__item lng-roadmapItem6">Airdrop</li>
+										<li class="roadmap__item lng-roadmapItem7">Whitelist</li>
 									</div>
 								</ul>
 								<div class="roadmap__stage roadmap__stage--2" aria-hidden="true">
@@ -1093,7 +1126,7 @@
 										height="auto"
 									/>
 								</div>
-								<h3 class="roadmap__subtitle roadmap__subtitle--1">start of the hunting season</h3>
+								<h3 class="roadmap__subtitle roadmap__subtitle--1 lng-subtitle1">start of the hunting season</h3>
 								<div class="roadmap__stage roadmap__stage--3" aria-hidden="true">
 									<img
 										src="./img/roadmap/stage3.png"
@@ -1129,9 +1162,11 @@
 									/>
 								</div>
 								<ul class="roadmap__list roadmap__list--2">
-									<li class="roadmap__item">Rewards for NFT holders</li>
-									<li class="roadmap__item">Release of “fuel” for <span class="roadmap__accesnt">KACHKA</span></li>
-									<li class="roadmap__item"><span class="roadmap__accesnt">$KACH</span> token IDO</li>
+									<li class="roadmap__item lng-roadmapItem8">Rewards for NFT holders</li>
+									<li class="roadmap__item lng-roadmapItem9">
+										Release of “fuel” for <span class="roadmap__accesnt">KACHKA</span>
+									</li>
+									<li class="roadmap__item lng-roadmapItem10"><span class="roadmap__accesnt">$KACH</span> token IDO</li>
 								</ul>
 								<div class="roadmap__stage roadmap__stage--4" aria-hidden="true">
 									<img
@@ -1168,15 +1203,17 @@
 									/>
 								</div>
 								<ul class="roadmap__list roadmap__list--3">
-									<li class="roadmap__item">Listing <span class="roadmap__accesnt">$KACH</span> на exchanges</li>
-									<li class="roadmap__item">
+									<li class="roadmap__item lng-roadmapItem11">
+										Listing <span class="roadmap__accesnt">$KACH</span> on exchanges
+									</li>
+									<li class="roadmap__item lng-roadmapItem12">
 										Early access to beta version for <span class="roadmap__accesnt">KACHKA</span> holders
 									</li>
-									<li class="roadmap__item">
+									<li class="roadmap__item lng-roadmapItem13">
 										Opening full access to the <span class="roadmap__accesnt">Bio Game</span> for all users
 									</li>
 								</ul>
-								<h3 class="roadmap__subtitle roadmap__subtitle--2">
+								<h3 class="roadmap__subtitle roadmap__subtitle--2 lng-subtitle2">
 									<span class="roadmap__accesnt">to be continued...</span>
 								</h3>
 							</div>
@@ -1269,7 +1306,7 @@
 			</section> -->
 			<section class="team" aria-labelledby="teamSectionTitle">
 				<div class="container">
-					<h2 id="teamSectionTitle" class="team__title">Team</h2>
+					<h2 id="teamSectionTitle" class="team__title lng-teamTitle">Team</h2>
 					<div class="team__grid">
 						<div class="team__member">
 							<picture>
@@ -1283,9 +1320,9 @@
 									loading="lazy"
 								/>
 							</picture>
-							<p class="team__name">David</p>
+							<p class="team__name lng-teamName1">David</p>
 							<div class="team__dec"></div>
-							<p class="team__pos">CEO / Product owner</p>
+							<p class="team__pos lng-teamPos1">CEO / Product owner</p>
 						</div>
 						<div class="team__member">
 							<picture>
@@ -1299,9 +1336,9 @@
 									loading="lazy"
 								/>
 							</picture>
-							<p class="team__name">Denis</p>
+							<p class="team__name lng-teamName2">Denis</p>
 							<div class="team__dec"></div>
-							<p class="team__pos">Project manager</p>
+							<p class="team__pos lng-teamPos2">Project manager</p>
 						</div>
 						<div class="team__member">
 							<picture>
@@ -1315,9 +1352,9 @@
 									loading="lazy"
 								/>
 							</picture>
-							<p class="team__name">Daniil</p>
+							<p class="team__name lng-teamName3">Daniil</p>
 							<div class="team__dec"></div>
-							<p class="team__pos">Creator</p>
+							<p class="team__pos lng-teamPos3">Creator</p>
 						</div>
 						<div class="team__member">
 							<picture>
@@ -1331,9 +1368,9 @@
 									loading="lazy"
 								/>
 							</picture>
-							<p class="team__name">Andrew</p>
+							<p class="team__name lng-teamName4">Andrew</p>
 							<div class="team__dec"></div>
-							<p class="team__pos">Marketer</p>
+							<p class="team__pos lng-teamPos4">Marketer</p>
 						</div>
 					</div>
 				</div>
@@ -1344,12 +1381,12 @@
 			<div class="container">
 				<div class="footer__grid">
 					<div class="footer__col">
-						<h2 class="footer__title">Connect</h2>
+						<h2 class="footer__title lng-footerTitle1">Connect</h2>
 						<a class="footer__email" href="mailto:support@kach.com" target="_blank">support@kach.com</a>
 						<div class="footer__socials">
 							<a
 								class="footer__social"
-								href="https://twitter.com/kach_nft?s=21&t=b8Xj-7W9mbTiirzvKjul6Q"
+								href="https://twitter.com/kachka_nft"
 								aria-label="Twitter"
 								target="_blank"
 								rel="noreferrer noopener"
@@ -1358,7 +1395,13 @@
 									<use xlink:href="#twitter" />
 								</svg>
 							</a>
-							<a class="footer__social" href="#" aria-label="Discord" target="_blank" rel="noreferrer noopener">
+							<a
+								class="footer__social"
+								href="https://discord.gg/vyVkavSg"
+								aria-label="Discord"
+								target="_blank"
+								rel="noreferrer noopener"
+							>
 								<svg width="21" height="24" focusable="false" aria-hidden="true">
 									<use xlink:href="#discord" />
 								</svg>
@@ -1394,16 +1437,26 @@
 						<p class="footer__copyright">©2022 KACH. All rights reserved</p>
 					</div>
 					<div class="footer__col">
-						<h2 class="footer__title">Menu</h2>
+						<h2 class="footer__title lng-footerTitle2">Menu</h2>
 						<nav>
 							<ul class="footer__menu">
-								<li class="footer__elem"><a class="footer__link" href="#aboutSectionTitle">Concept</a></li>
-								<li class="footer__elem"><a class="footer__link" href="#missionSectionTitle">Mission</a></li>
-								<li class="footer__elem"><a class="footer__link" href="#gallerySectionTitle">Gallery</a></li>
-								<li class="footer__elem"><a class="footer__link" href="#faqSectionTitle">Benefits</a></li>
-								<li class="footer__elem"><a class="footer__link" href="#roadmapSectionTitle">Roadmap</a></li>
-								<!-- <li class="footer__elem"><a class="footer__link" href="#getSectionTitle">Selection</a></li> -->
-								<li class="footer__elem"><a class="footer__link" href="#teamSectionTitle">Team</a></li>
+								<li class="footer__elem">
+									<a class="footer__link lng-headerConcept" href="#aboutSectionTitle">Concept</a>
+								</li>
+								<li class="footer__elem">
+									<a class="footer__link lng-headerMission" href="#missionSectionTitle">Mission</a>
+								</li>
+								<li class="footer__elem">
+									<a class="footer__link lng-headerGallery" href="#gallerySectionTitle">Gallery</a>
+								</li>
+								<li class="footer__elem">
+									<a class="footer__link lng-headerBenefit" href="#faqSectionTitle">Benefits</a>
+								</li>
+								<li class="footer__elem">
+									<a class="footer__link lng-headerRoadmap" href="#roadmapSectionTitle">Roadmap</a>
+								</li>
+								<!-- <li class="footer__elem"><a class="footer__link lng-headerSelection" href="#getSectionTitle">Selection</a></li> -->
+								<li class="footer__elem"><a class="footer__link lng-headerTeam" href="#teamSectionTitle">Team</a></li>
 							</ul>
 						</nav>
 						<div class="footer__dec footer__dec--desc">
@@ -1414,6 +1467,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/translation.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

@@ -1,7 +1,61 @@
 document.addEventListener("DOMContentLoaded", () => {
+	// Scroll
 	if (window.pageYOffset > 10 && !window.location.hash) {
 		window.scrollTo(0, 0);
 	}
+
+	// Storage, Translation
+	const select = document.querySelector("#language");
+	const languageType = localStorage.getItem("language");
+	const roadmapNumber = document.querySelectorAll(".roadmap__number");
+
+	function changeLanguage(lng) {
+		for (let key in translation) {
+			const arr = document.querySelectorAll(`.lng-${key}`);
+
+			if (!arr.length) continue;
+
+			if (arr.length > 1) {
+				for (let i = 0; i < arr.length; i++) {
+					arr[i].innerHTML = translation[key][lng];
+				}
+			} else {
+				arr[0].innerHTML = translation[key][lng];
+			}
+		}
+	}
+
+	function changeStageImages(lng) {
+		if (lng === "en") {
+			roadmapNumber.forEach((item, index) => {
+				item.src = `./img/roadmap/stage${index + 1}.png`;
+				item.classList.remove(`ua-${index + 1}`);
+			});
+		} else if (lng === "ua") {
+			roadmapNumber.forEach((item, index) => {
+				item.src = `./img/roadmap/stage${index + 1}-ua.png`;
+				item.classList.add(`ua-${index + 1}`);
+			});
+		}
+	}
+
+	if (languageType) {
+		select.value = languageType;
+		if (languageType !== "en") {
+			changeLanguage(languageType);
+			changeStageImages(languageType);
+		}
+	} else {
+		localStorage.setItem("language", "en");
+		select.value = "en";
+	}
+
+	select.addEventListener("change", (event) => {
+		const value = event.target.value;
+		localStorage.setItem("language", value);
+		changeLanguage(value);
+		changeStageImages(value);
+	});
 
 	const bgVideo = document.querySelector(".preview__iframe");
 
@@ -33,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const playVideoBtn = document.querySelector("#playVideo");
 
 	playVideoBtn.addEventListener("click", () => {
-		// bgVideo.play();
+		bgVideo.play();
 		playVideoBtn.classList.add("preview__play--hiden");
 		playVideoBtn.disabled = true;
 	});
@@ -66,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		let daysLeft = Math.floor(diff / 1000 / 60 / 60 / 24);
 		let hoursLeft = Math.floor(diff / 1000 / 60 / 60) % 24;
 		let minutesLeft = Math.floor(diff / 1000 / 60) % 60;
+		let secondsLeft = Math.floor(diff / 1000) % 60;
 
 		daysLeft < 0 ? (daysLeft = 0) : daysLeft;
 
@@ -81,8 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			minutesLeft = 0;
 		}
 
-		const finalTime = `${daysLeft} : ${hoursLeft} : ${minutesLeft}`;
-		const metaTime = `${daysLeft}:${hoursLeft}:${minutesLeft}`;
+		if (secondsLeft < 10 && secondsLeft > 0) {
+			secondsLeft = "0" + secondsLeft;
+		} else if (secondsLeft < 0) {
+			secondsLeft = 0;
+		}
+
+		const finalTime = `${daysLeft} : ${hoursLeft} : ${minutesLeft} : ${secondsLeft}`;
+		const metaTime = `${daysLeft}:${hoursLeft}:${minutesLeft}: ${secondsLeft}`;
 
 		timerContainer.innerHTML = finalTime;
 		timerContainer.dateTime = metaTime;
