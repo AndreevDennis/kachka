@@ -20,11 +20,12 @@
 }
 
 .btn--opensea {
-	background-image: none;
-	background-color: var(--opensea-color);
+	font-family: "Mr-Amazin", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
-.btn--opensea svg {
+.btn--opensea img {
 	margin-right: 10px;
 }
 

@@ -665,6 +665,11 @@
 		font-size: 20px;
 	}
 
+	.btn--opensea {
+		font-size: 32px;
+		line-height: 35px;
+	}
+
 	/* PREVIEW */
 	.preview__title {
 		line-height: 102px;
