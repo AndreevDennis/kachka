@@ -19,6 +19,11 @@
 	pointer-events: all;
 }
 
+.modal--clear {
+	transition: opacity 0s ease;
+	background-image: none;
+}
+
 .modal__container {
 	height: 100%;
 	display: flex;
@@ -27,6 +32,8 @@
 }
 
 .modal__wrapper {
+	position: relative;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
