@@ -63,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	const preloadDiv = document.querySelector(".preload");
 
 	setTimeout(() => {
+		document.body.classList.remove("body__overflow--hidden");
+		document.body.classList.add("body__overflow--visible");
 		preloadDiv.classList.add("preload--hidden");
 		bgVideo.classList.remove("preview__iframe--paused");
 		bgVideo.play();
