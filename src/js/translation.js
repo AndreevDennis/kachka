@@ -69,8 +69,8 @@ const translation = {
 	},
 	// Info
 	infoTitle: {
-		en: "This is 1110 NFT-ducks with unique weapons and plumage.",
-		ua: "Це 1100 NFT-качок з унікальною зброєю та оперенням.",
+		en: "This is 2402 NFT-ducks with unique weapons and plumage.",
+		ua: "Це 2402 NFT-качок з унікальною зброєю та оперенням.",
 	},
 	infoText: {
 		en: "We want to fulfill every duck’s destiny - <b>destroy our enemies.</b> <br /> The battle duck is one of the symbols Ukrainian people’s strength and will.",
