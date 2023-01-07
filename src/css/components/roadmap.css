@@ -65,8 +65,12 @@
 }
 
 .roadmap__block--1 {
-	margin-top: -170px;
+	margin-top: -135px;
 	margin-left: 170px;
+}
+
+.roadmap__number.ua-1 + .roadmap__block--1 {
+	margin-top: -170px;
 }
 
 .roadmap__block--2 {
@@ -148,6 +152,7 @@
 }
 
 .roadmap__accesnt {
+	font-weight: 700;
 	color: var(--accent-color);
 }
 

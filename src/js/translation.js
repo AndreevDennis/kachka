@@ -211,12 +211,8 @@ const translation = {
 		ua: "Випуск «пального» для <span class='roadmap__accesnt'>KACHKA</span>",
 	},
 	roadmapItem10: {
-		en: "<span class='roadmap__accesnt'>$KACH</span> token IDO",
-		ua: "IDO токени <span class='roadmap__accesnt'>$KACH</span>",
-	},
-	roadmapItem11: {
-		en: "Listing <span class='roadmap__accesnt'>$KACH</span> on exchanges",
-		ua: "Лістинг <span class='roadmap__accesnt'>$KACH</span> на біржах",
+		en: "Start of developing <span class='roadmap__accesnt'>KACHKA</span> Game",
+		ua: "Початок розробки <span class='roadmap__accesnt'>KACHKA</span> Game",
 	},
 	roadmapItem12: {
 		en: "Early access to beta version for <span class='roadmap__accesnt'>KACHKA</span> holders",
