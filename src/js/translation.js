@@ -162,8 +162,8 @@ const translation = {
 		ua: "Ви станете власником єдиної в Україні BIO-Зброї",
 	},
 	faqText7: {
-		en: "You will a get VIP access to <br /> <b style='margin-top: 10px'>CRYPTO KACHKA GAME</b>",
-		ua: "Ви отримаєте VIP-доступ до гри <b style='margin-top: 10px'>CRYPTO LAB</b>",
+		en: "You will get access to the <b>KACHKA GAME</b> and all subsequent projects",
+		ua: "Ви отримаєте VIP-доступ до гри <b>KACHKA GAME</b> і до всіх майбутніх проектів",
 	},
 	// Roadmap
 	subtitle1: {
