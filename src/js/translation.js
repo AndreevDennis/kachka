@@ -162,8 +162,8 @@ const translation = {
 		ua: "Ви станете власником єдиної в Україні BIO-Зброї",
 	},
 	faqText7: {
-		en: "You will a get VIP access to <br /> <b style='margin-top: 10px'>CRYPTO KACHKA GAME</b>",
-		ua: "Ви отримаєте VIP-доступ до гри <b style='margin-top: 10px'>CRYPTO LAB</b>",
+		en: "You will get access to the <b>KACHKA GAME</b> and all subsequent projects",
+		ua: "Ви отримаєте VIP-доступ до гри <b>KACHKA GAME</b> і до всіх майбутніх проектів",
 	},
 	// Roadmap
 	subtitle1: {
@@ -211,12 +211,8 @@ const translation = {
 		ua: "Випуск «пального» для <span class='roadmap__accesnt'>KACHKA</span>",
 	},
 	roadmapItem10: {
-		en: "<span class='roadmap__accesnt'>$KACH</span> token IDO",
-		ua: "IDO токени <span class='roadmap__accesnt'>$KACH</span>",
-	},
-	roadmapItem11: {
-		en: "Listing <span class='roadmap__accesnt'>$KACH</span> on exchanges",
-		ua: "Лістинг <span class='roadmap__accesnt'>$KACH</span> на біржах",
+		en: "Start of developing <span class='roadmap__accesnt'>KACHKA</span> Game",
+		ua: "Початок розробки <span class='roadmap__accesnt'>KACHKA</span> Game",
 	},
 	roadmapItem12: {
 		en: "Early access to beta version for <span class='roadmap__accesnt'>KACHKA</span> holders",
